@@ -1,0 +1,50 @@
+h1{
+	.separator-bottom(1px solid fade(@brand-primary, 20%)) !important;
+	color: @brand-primary;
+	font-weight: 200;
+	padding: 0 0 10px;
+	margin: 0;
+	margin-bottom: 60px;
+}
+
+h2{
+	color: @brand-primary;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 30px;
+
+	&.light{
+		font-weight: 200;
+	}
+}
+
+h3{
+	color: @gray;
+
+}
+
+h5{
+	color: @gray-light;
+}
+
+p{
+	font-size: @font-size-base + 2;
+}
+
+blockquote{
+	padding: 0;
+	margin-bottom: 0;
+	border: none;
+
+	p{
+		color: @brand-primary;
+		font-size: @font-size-large;
+	}
+	footer{
+		font-size: @font-size-base + 2;
+
+		&:before, &:after{
+			content: '\00A0 \2014 \00A0';
+		}
+	}
+}

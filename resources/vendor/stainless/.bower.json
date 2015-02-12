@@ -1,0 +1,32 @@
+{
+  "name": "stainless",
+  "homepage": "https://github.com/tzs007/stainless",
+  "authors": [
+    "takacszs <zsolt.takacs@webbandflow.co.uk>"
+  ],
+  "description": "Stainless.less is a pre-alpha lesscss helper with some simple classes like .kill-margin, .bold or .uppercase",
+  "main": "stainless.less",
+  "keywords": [
+    "lesscss",
+    "less",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "",
+    "test",
+    "tests"
+  ],
+  "_release": "84d28b6a32",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "84d28b6a32861d5056ff0818f264b0e4cd5f1d84"
+  },
+  "_source": "git://github.com/tzs007/stainless.git",
+  "_target": "*",
+  "_originalSource": "stainless"
+}

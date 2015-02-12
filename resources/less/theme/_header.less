@@ -1,0 +1,111 @@
+/* Mobile view */
+
+#navigation{
+	color: @brand-primary;
+	font-size: @font-size-base;
+}
+
+#toolbar{
+	.lh-background-image(linear-gradient(to bottom, #f2f2f2 0%,#d1d1d1 100%));
+	padding: 5px 0;
+
+	p{
+		font-weight: 700;
+	}
+
+	ul{
+		li{
+			padding: 0;
+			white-space: nowrap;
+
+			&:before{
+				content: '\00a0\2022\00a0\00a0';
+			}
+
+			&:first-child{
+				font-weight: bold;
+
+				&:before{
+					content: '';
+				}
+			}
+
+			&:last-child{
+
+			}
+
+			a{
+				&:hover{
+					text-decoration: none;
+					color: @brand-secondary;
+				}
+			}
+		}
+	}
+
+	.toolbar-slogan{
+		font-size: @font-size-base;
+	}
+
+	.toolbar-contact,
+	.toolbar-slogan{
+		.text-center;
+	}
+
+	.phone{
+		font-weight: bold;
+		color: @brand-success;
+	}
+}
+
+// updated colors if they refused the new design, remove that block
+#toolbar{
+	.lh-background-image(linear-gradient(to bottom, @brand-primary 0%, @brand-primary 90%, darken(@brand-primary, 20%) 100%));
+	padding: 5px 0;
+	color: #fff;
+	text-shadow: 0 1px multiply(@brand-primary, @brand-primary);
+
+	ul{
+		li{
+
+
+			a{
+				color: #fff;
+
+				&:hover{
+					text-decoration: none;
+					color: @brand-secondary;
+				}
+			}
+		}
+	}
+}
+
+#main-menu{
+	background: #fff;
+	padding: (@grid-gutter-width / 2) 0;
+}
+
+.logo{
+	width: 100%;
+}
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {
+	#toolbar{
+		.toolbar-slogan{
+			.text-left;
+		}
+		.toolbar-contact{
+			.text-right;
+		}
+	}
+}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {}

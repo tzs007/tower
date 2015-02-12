@@ -1,0 +1,138 @@
+.navbar{
+	.lh-border-radius(0);
+	margin-bottom: 0;
+	border: none;
+	min-height: 0;
+}
+
+.navbar-nav {
+
+	margin-top: @grid-gutter-width;
+
+	> li{
+
+		&:last-child{
+			a{
+				border-bottom: none;
+			}
+		}
+
+		a{
+			.text-uppercase;
+			font-size: @font-size-large - 1;
+			font-weight: 600;
+			border-bottom: 1px solid @gray-lighter;
+
+			&:hover{
+				background: none;
+				color: @brand-secondary;
+			}
+		}
+	}
+}
+
+.navbar-brand{
+	height: auto;
+	line-height: 100%;
+	padding: 0 @grid-gutter-width / 2;
+
+	img{
+		.lh-size(168, auto);
+	}
+}
+
+.navbar-toggle{
+	.lh-size(43);
+	font-size: 18px;
+	border: 1px solid fade(@brand-primary, 40%);
+	margin: 0;
+	margin-right: @grid-gutter-width / 2;
+}
+
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+	.navbar-nav {
+		display: table;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+
+		> li{
+			display: table-cell;
+			vertical-align: top;
+			border-right: 1px solid #d1d5d8;
+
+			&:last-child{
+				border: none;
+			}
+
+			a{
+				.text-uppercase;
+				font-weight: 600;
+				border-bottom: none;
+				padding-left: 8px;
+				padding-right: 8px;
+
+				&:hover{
+					background: none;
+					color: @brand-secondary;
+				}
+			}
+		}
+
+		&.navbar-right{
+			&:last-child{
+			}
+		}
+	}
+
+	.navbar-header{
+		.text-center;
+		width: 100%;
+		padding: (@grid-gutter-width / 2) 0 @grid-gutter-width;
+	}
+
+	.navbar-brand{
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {
+	.navbar-nav {
+		display: block;
+		width: auto;
+
+		> li{
+			display: inline-block;
+
+			a{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+
+		&.navbar-right{
+			&:last-child{
+				margin-right: -25px;
+			}
+		}
+	}
+
+	.navbar-header{
+		.text-left;
+		width: auto;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	.navbar-brand{
+		float: left;
+		display: block;
+	}
+}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {}

@@ -1,0 +1,32 @@
+.btn{
+	text-transform: uppercase;
+	font-weight: 600;
+
+	/* states */
+
+	&-info{
+		text-shadow: 0 1px multiply(@brand-info, @brand-info);
+	}
+
+	&-success{
+		text-shadow: 0 1px multiply(@brand-success, @brand-success);
+	}
+
+	&-warning{
+		text-shadow: 0 1px multiply(@brand-warning, @brand-warning);
+	}
+
+	&-danger{
+		text-shadow: 0 1px multiply(@brand-danger, @brand-danger);
+	}
+
+	/* custom */
+
+	&-cta{
+		.button-variant(#fff; @brand-cta; @brand-cta);
+	}
+
+	&-demo{
+		.lh-box-shadow('0 5px 10px #000');
+	}
+}

@@ -1,0 +1,130 @@
+/* depends on lesshat-prefixed.less */
+
+/* Skeleton modifiers */
+.vertical-gap(@t:0, @b:0){ padding-top: @t; padding-bottom: @b; }
+.horizontal-gap(@l:0, @r:0){ padding-left: @l; padding-right: @r; }
+.gap(@margin:0, @padding:0){ margin: @margin; padding: @padding; }
+
+.kill{
+
+	&-radius{ .lh-border-radius(0); }
+
+	&-shadow{ .lh-box-shadow(~"none"); }
+
+	&-background{ background: none; }
+
+	&-textdeco{ text-decoration: none; }
+
+	&-margin{
+		margin: 0;
+
+		&-left{
+			margin-left: 0;
+		}
+		&-right{
+			margin-right: 0;
+		}
+		&-top{
+			margin-top: 0;
+		}
+		&-bottom{
+			margin-bottom: 0;
+		}
+	}
+
+	&-padding{
+		padding: 0;
+
+			&-left{
+				padding-left: 0;
+			}
+			&-right{
+				padding-right: 0;
+			}
+			&-top{
+				padding-top: 0;
+			}
+			&-bottom{
+				padding-bottom: 0;
+			}
+	}
+
+	&-border{
+		border: none;
+
+		&-left{
+			border-left: 0;
+		}
+		&-right{
+			border-right: 0;
+		}
+		&-top{
+			border-top: 0;
+		}
+		&-bottom{
+			border-bottom: 0;
+		}
+	}
+}
+
+
+.child-reset{
+	margin: 0;
+	border: none;
+}
+
+.text-wrap{
+	text-wrap: wrap;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word;
+}
+
+.block{ display:block; }
+.inline{ display:inline; }
+.inline-block{ display:inline-block; }
+.inline-table{ display:inline-table; }
+
+.fade2twenty{ .opacity(.20) }
+.fade2fifty{ .opacity(.50) }
+.fade2eighty{ .opacity(.80) }
+
+/* Typo modifiers */
+.regular{ font-style: normal; }
+.italic{ font-style: italic; }
+.oblique{ font-style: oblique; }
+.normal{ font-weight: 100; }
+.strong{ font-weight: 300; }
+.bold{ font-weight: 500; }
+.bolder{ font-weight: 900; }
+.uppercase{ text-transform: uppercase; }
+.lowercase{ text-transform: lowercase; }
+.capitalize{ text-transform: capitalize; }
+.strike{ text-decoration: line-through; }
+.underline{ text-decoration: underline; }
+.overline{ text-decoration: overline; }
+.asterisk{ color: red; }
+
+/* Position modifiers */
+.relative{ position: relative; }
+.absolute{ position: absolute; }
+.static{ position: static; }
+.fixed{ position: fixed; }
+.put-upper{ z-index: 9999; }
+.put-lower{ z-index: -1; }
+
+.v-align{
+	&-top{ vertical-align: top; }
+	&-middle{ vertical-align: middle; }
+	&-bottom{ vertical-align: bottom; }
+	&-sup{ vertical-align: super; }
+	&-sub{ vertical-align: sub; }
+	&-baseline{ vertical-align: baseline; }
+	&-text-bottom{ vertical-align: text-bottom; }
+	&-text-top{ vertical-align: text-top; }
+}
+
+/* Mixins */
+.text-shadow (@x: 0; @y: 0; @blur: 1px; @color: #000) {
+	text-shadow: @arguments;
+}
