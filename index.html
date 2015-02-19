@@ -36,6 +36,7 @@
 
 		<script>
 			$(document).ready(function(){
+				/* owl */
 				$(".owl-carousel").owlCarousel({
 					loop:false,
 					margin:0,
@@ -49,6 +50,15 @@
 							items:1
 						}
 					}
+				});
+				/* mainpage form */
+
+				$('.form-control').on('focus', function(){
+					$(this).parents('.form-group').find('.control-label').addClass('selected');
+				});
+
+				$('.form-control').on('blur', function(){
+					$(this).parents('.form-group').find('.control-label').removeClass('selected');
 				});
 			});
 		</script>
@@ -77,7 +87,7 @@
 											<a href="tel:3613540980" class="visible-xs phone">+3613540980</a>
 											<span class="hidden-xs phone">+3613540980</span>
 										</li>
-										<li class="hidden-xs"><a href="#">My list of homes</a></li>
+										<li class="hidden-xs"><a href="homes.html">My list of homes</a></li>
 										<li><a href="#">Váltás magyarra</a></li>
 									</ul>
 								</nav>
@@ -101,12 +111,12 @@
 
 							<div class="collapse navbar-collapse" id="tower-menu">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Landlord Services</a></li>
-									<li><a href="#">Budapest Rentals</a></li>
-									<li><a href="#">Property Sales</a></li>
-									<li class="visible-xs"><a href="#">My list of homes</a></li>
-									<li><a href="#">About Us</a></li>
+									<li><a href="/">Home</a></li>
+									<li><a href="landlord.html">Landlord Services</a></li>
+									<li><a href="rentals.html">Budapest Rentals</a></li>
+									<li><a href="sales.html">Property Sales</a></li>
+									<li class="visible-xs"><a href="homes.html">My list of homes</a></li>
+									<li><a href="about.html">About Us</a></li>
 								</ul>
 							</div>
 						</div>
@@ -119,13 +129,15 @@
 					<div class="owl-carousel-item slide1">
 						<div class="container">
 							<div class="row">
-								<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-4">
-									<h1 class="hero-title">Profit from your Budapest property</h1>
-									<h2 class="hero-subtitle">
-										Budapest's <span>leading</span> property services group<br>
-										<span>will make sure</span> your Hungarian property is<br>
-										well maintained and protected.
-									</h2>
+								<div class="col-sm-9 col-sm-offset-3 col-lg-8 col-lg-offset-4">
+									<hgroup>
+										<h1 class="hero-title">Profit from your Budapest property</h1>
+										<h2 class="hero-subtitle">
+											Budapest's <span>leading</span> property services group<br>
+											<span>will make sure</span> your Hungarian property is<br>
+											well maintained and protected.
+										</h2>
+									</hgroup>
 									<ul>
 										<li>Over 700 properties managed</li>
 										<li>98% occupancy on managed stock</li>
@@ -134,8 +146,8 @@
 										<li>Experienced, multi langual staff</li>
 									</ul>
 									<p>
-										<a href="#" class="btn btn-lg btn-cta text-uppercase" style="z-index:9999">Contact us</a>
-										<span class="or-separator">or</span><a href="#" class="learn-more">learn more</a>
+										<a href="#" class="btn btn-lg btn-cta text-uppercase">Contact us</a>
+										<span class="or-separator">or</span><a href="landlord.html" class="learn-more">learn more</a>
 									</p>
 								</div>
 							</div>
@@ -149,48 +161,68 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="text-center">Landlord Services</h1>
+							<h1 class="text-center landlord-services-title">
+								<span class="linea left"></span>
+								<span class="linea right"></span>
+								Landlord Services
+							</h1>
 							<div class="row">
-								<div class="col-sm-4 text-center">
+								<div class="col-sm-4 text-center landlord-service">
 									<div class="icon-container icon-container-push-down"><i class="icon icon-presentation"></i></div>
-									<h2 class="kill-border">Wealth Protection</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi dignissimos aperiam ea, pariatur eveniet voluptas, consequuntur minus, architecto quo amet voluptatibus ab velit deleniti laborum ex omnis ut et.</p>
+									<h2 class="landlord-services-subtitle kill-border">Wealth Protection</h2>
+									<p>Insurance, tenant screening, regular inspections, eviction of the non-paying tenant. Your property is <span class="important">maintained and protected.</span></p>
 								</div>
-								<div class="col-sm-4 text-center">
+								<div class="col-sm-4 text-center landlord-service">
 									<div class="icon-container icon-container-push-down"><i class="icon icon-wallet" style="line-height:85px"></i></div>
-									<h2 class="kill-border">Yield</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur debitis vitae quaerat iure perferendis quod repellat necessitatibus, dignissimos exercitationem iste temporibus magnam a dolores natus in sint eaque nihil sit!</p>
+									<h2 class="landlord-services-subtitle kill-border">Yield</h2>
+									<p>Rental department, occupancy, bank transfers, cash collection, marketing. Let us make your investments <span class="important">work for you.</span></p>
 								</div>
-								<div class="col-sm-4 text-center">
+								<div class="col-sm-4 text-center landlord-service">
 									<div class="icon-container icon-container-push-down"><i class="icon icon-chat" style="line-height:85px"></i></div>
-									<h2 class="kill-border">Communication</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi voluptatibus nostrum, ipsum harum illum quo officiis, officia delectus dolore sed nam optio consequuntur possimus suscipit cumque saepe a enim?</p>
+									<h2 class="landlord-services-subtitle kill-border">Communication</h2>
+									<p>Professional customer care, account management, Tower365 administration page for <span class="important">24/7 access</span> to your Budapest property.</p>
 								</div>
-								<div class="col-sm-12 text-center">
-									<p><a href="#" class="btn btn-info btn-lg">Learn more</a></p>
-									<p>or</p>
+								<div class="col-sm-12 text-center block-cta">
+									<p><a href="landlord.html" class="btn btn-info btn-lg">Learn more</a></p>
+									<p class="or-separator">or</p>
 								</div>
-								<div class="col-sm-8 col-sm-offset-2">
+
+								<div class="col-sm-10 col-sm-offset-1 get-in-touch">
+
 									<hgroup class="text-center">
-										<h2 class="kill-margin">Get in touch now</h2>
-										<h3 class="kill-margin">and we will contact you within 24 hours</h3>
+										<h2 class="kill-margin get-in-touch-title">Get in touch now</h2>
+										<h3 class="kill-margin get-in-touch-subtitle">and we will contact you within 24 hours</h3>
 									</hgroup>
-									<form class="form-horizontal">
+
+									<form action="" class="form-horizontal">
 										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-2 control-label input-lg">Email</label>
-											<div class="col-sm-10">
-												<input type="email" class="form-control input-lg" id="inputEmail3" placeholder="Email">
+											<label for="name" class="col-sm-4 control-label input-lg">Your name: <span class="required">*</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control input-lg" id="name" placeholder="e.g: John Smith jr.">
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="inputPassword3" class="col-sm-2 control-label input-lg">Password</label>
-											<div class="col-sm-10">
-												<input type="password" class="form-control input-lg" id="inputPassword3" placeholder="Password">
+											<label for="mobile" class="col-sm-4 control-label input-lg">Your mobile number: <span class="required">*</span></label>
+											<div class="col-sm-8">
+												<input type="password" class="form-control input-lg" id="mobile" placeholder="e.g: +36 20 123 4567">
 											</div>
 										</div>
 										<div class="form-group">
-											<div class="col-sm-offset-2 col-sm-10">
+											<label for="email" class="col-sm-4 control-label input-lg">Your E-mail address: <span class="required">*</span></label>
+											<div class="col-sm-8">
+												<input type="email" class="form-control input-lg" id="email" placeholder="e.g: john.smith.jr@gmail.com">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="message" class="col-sm-4 control-label input-lg">Your message:</label>
+											<div class="col-sm-8">
+												<textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder=""></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-offset-4 col-sm-8">
 												<button type="submit" class="btn btn-success btn-lg">Send enquiry</button>
+												<p class="form-control-static input-lg or-separator">or&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">Contact us</a> on <strong>+36 1 354 0980</strong></p>
 											</div>
 										</div>
 									</form>
@@ -201,19 +233,38 @@
 				</div>
 			</section>
 
-			<section class="infopanels block" style="background: #f6f8f8">
+			<section class="infopanels block">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-6 text-center">
-							<h2>Budapest Rentals</h2>
-							<h5>We have tenants waiting for your property</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corporis, inventore ratione veniam porro, cupiditate omnis ducimus mollitia animi vero, neque? Quibusdam dolor saepe, mollitia. Accusamus, quibusdam veritatis voluptatem tempore!</p>
-							<a href="#" class="btn btn-default btn-lg">Let your property</a>
+						<div class="col-sm-6 text-center infopanel left">
+							<hgroup>
+								<h2 class="infopanel-title">Budapest Rentals</h2>
+								<h5 class="infopanel-subtitle">We have tenants waiting for your property</h5>
+								<h6 class="infopanel-undertitle">Working investments</h6>
+							</hgroup>
+
+							<p class="infopanel-text">
+								Through its' professional marketing channels and<br>
+								team of experienced letting agents Tower rents out<br>
+								dozen of properties each month, ensuring the highest<br>
+								occupancy ratio for property investors.
+							</p>
+							<a href="#" class="btn btn-info btn-lg">Let your property</a>
 						</div>
-						<div class="col-sm-6 text-center">
-							<h2>Property sales</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim voluptas dolorem, dolores quos qui culpa similique accusantium quisquam, ex aliquid a blanditiis, sequi tempora nobis ullam sunt veritatis provident.</p>
-							<a href="#" class="btn btn-default btn-lg">Sell your property</a>
+						<div class="col-sm-6 text-center infopanel right">
+							<hgroup>
+								<h2 class="infopanel-title">Property sales</h2>
+								<h5 class="infopanel-subtitle">Selling at the right time. Selling at the right price.</h5>
+								<h6 class="infopanel-undertitle">Selling with Tower</h6>
+							</hgroup>
+
+							<p class="infopanel-text">
+								Free valuation &bull; Over 1000 properties sold &bull; 10 year's experience<br>
+								Multi-langual staff &bull; No fee, all free advertisements!<br>
+								Extensive marketing exposure<br>
+								Independent lawyers, specialized in property law
+							</p>
+							<a href="#" class="btn btn-info btn-lg">Sell your property</a>
 						</div>
 					</div>
 				</div>
@@ -225,11 +276,10 @@
 						<div class="col-sm-12 text-center">
 							<div class="icon-container icon-container-push-down"><i class="icon icon-happy"></i></div>
 							<h2 class="light">Client Testimonials</h2>
-							<h5>Selling at the right time. Selling at the right price.</h5>
 							<div class="row">
 								<blockquote class="col-sm-8 col-sm-offset-2">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro iusto autem, necessitatibus! Molestiae consequatur eos, quasi, delectus, dicta iure iusto ullam quisquam deleniti veritatis voluptatum explicabo quos magni similique. Ut.</p>
-								<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								<p>"The detailed replies that you have sent to me relating to my many questions, l  and my wife  have  found them to be most informative. The use of  English is first class, and  your company seems to be very professional, so we have decided to go with you in renting the apartment."</p>
+								<footer>Edmund</footer>
 							</blockquote>
 							</div>
 						</div>
@@ -238,18 +288,21 @@
 			</section>
 
 			<section class="tower365 block">
+				<div class="left-image hidden-xs"></div>
+				<div class="right-image hidden-xs"></div>
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 text-center">
-							<div class="left-image hidden-xs">tablet here</div>
-							<div class="right-image hidden-xs">coffee here</div>
-							<h2 class="light kill-border kill-margin">Tower 365</h2>
-							<h3 class="kill-border">24/7 access to your Budapest property</h3>
-							<p>Through Tower's unique login system you will get 24/7 access to your
+						<div class="col-sm-6 col-sm-offset-3 text-center">
+							<hgroup>
+								<h2 class="tower365-title light kill-border kill-margin">Tower 365</h2>
+								<h3 class="tower365-subtitle kill-border">24/7 access to your Budapest property</h3>
+							</hgroup>
+
+							<p class="tower365-text">Through Tower's unique login system you will get 24/7 access to your
 Budapest property. See financial transactions, up-to-date activity notes,
 your tax returns, your property details
 and more...</p>
-							<a href="//demo.tower365.hu" class="btn btn-info btn-demo btn-lg">Demo</a>
+							<a href="//demo.tower365.hu" class="btn btn-demo btn-lg">Demo</a>
 						</div>
 					</div>
 				</div>
@@ -260,9 +313,26 @@ and more...</p>
 					<div class="row">
 						<div class="col-sm-12 text-center">
 							<div class="icon-container icon-container-push-down"><i class="icon icon-map" style="line-height:85px"></i></div>
-							<h1 class="kill-margin kill-border">Live map about our listed properties</h1>
-							<h5 class="kill-margin">That map shows you properties for sale and for rent. Click on them for details.</h5>
-							<div class="icon-guide"><p>icon guide</p></div>
+							<hgroup>
+								<h1 class="live-map-title kill-margin kill-border">
+									<span class="linea left"></span>
+									<span class="linea right"></span>
+									Live map about our listed properties
+								</h1>
+								<h5 class="live-map-subtitle kill-margin">That map shows you properties for sale and for rent. Click on them for details.</h5>
+							</hgroup>
+							<div class="row pin-guide clearfix">
+								<div class="col-sm-4 col-sm-offset-4">
+									<div class="rent">
+										<img src="resources/images/pin-guide-rent.png" alt="" class="pin">
+										<strong>For Rent</strong>
+									</div>
+									<div class="sale">
+										<img src="resources/images/pin-guide-sale.png" alt="" class="pin">
+										<strong>For Sale</strong>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -270,29 +340,93 @@ and more...</p>
 			</section>
 
 			<footer class="bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6"><h2>Latest news</h2></div>
-						<div class="col-sm-6"><h2>Check our portfolio</h2></div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<ul class="list-unstyled list-inline text-center">
-								<li><a href="#">Landlord Services</a></li>
-								<li><a href="#">Budapest Rentals</a></li>
-								<li><a href="#">Property Sales</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Apartment Budapest</a></li>
-								<li><a href="#">Accounting &amp; Tax Returns</a></li>
-								<li><a href="#">Property Florida</a></li>
-							</ul>
+				<div class="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6 footer-latest-news">
+								<h2 class="title">Latest news and articles</h2>
+								<ul class="list-unstyled kill-margin">
+									<li><a href="#">How to get more from your Budapest apartment?</a></li>
+									<li><a href="#">Record-Breaking Sales on the real-Estate Market</a></li>
+									<li><a href="#">15 New Bridges Are to be built over the Danube</a></li>
+									<li><a href="#">Hungarian Costes Is the 25th Best Restaurant of the World</a></li>
+									<li><a href="#">3 Things to Do if There Was a Break-In</a></li>
+								</ul>
+								<a href="#" class="more-news">Click for more Budapest and Tower news &gt;</a>
+							</div>
+							<div class="col-sm-6 footer-portfolio">
+								<h2 class="title">Check our portfolio</h2>
+								<div class="row">
+									<div class="col-xs-4 portfolio-logo">
+										<a href="http://tower-investments.com" class="portfolio-logo-link">
+											<img src="resources/images/portfolio/tower-investments.png" alt="" class="img-responsive">
+											<span>www.tower-investments.com</span>
+										</a>
+									</div>
+									<div class="col-xs-4 portfolio-logo">
+										<a href="http://tower-offices.com" class="portfolio-logo-link">
+											<img src="resources/images/portfolio/tower-offices.png" alt="" class="img-responsive">
+											<span>www.tower-offices.com</span>
+										</a>
+									</div>
+									<div class="col-xs-4 portfolio-logo">
+										<a href="http://mybudapesthome.com" class="portfolio-logo-link">
+											<img src="resources/images/portfolio/mbh.png" alt="" class="img-responsive">
+											<span>www.mybudapesthome.com</span
+										</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-4 portfolio-logo">
+										<a href="http://ujiroda.hu" class="portfolio-logo-link">
+											<img src="resources/images/portfolio/ujiroda.png" alt="" class="img-responsive">
+											<span>www.ujiroda.hu</span>
+										</a>
+									</div>
+									<div class="col-xs-4 portfolio-logo">
+										<a href="http://time2buy.com" class="portfolio-logo-link">
+											<img src="resources/images/portfolio/time2buy.png" alt="" class="img-responsive" style="margin-top:10px;">
+											<span>www.time2buy.com</span>
+										</a>
+									</div>
+									<div class="col-xs-4 portfolio-logo">
+										<a href="http://szolgaltatottirodak.hu" class="portfolio-logo-link">
+											<img src="resources/images/portfolio/ujiroda-szolgaltatott.png" alt="" class="img-responsive">
+											<span>www.szolgaltatottirodak.hu</span>
+										</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-4 portfolio-logo">
+										<a href="http://budapestluxuryapartments.hu" class="portfolio-logo-link">
+											<img src="resources/images/portfolio/bla.png" alt="" class="img-responsive">
+											<span>www.budapestluxuryapartments.hu</span>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<p class="text-center kill-padding"><a href="#">Apartments for rent in Budapest</a> by &copy; Tower International 2014. All rights reserved.</p>
-							<p class="text-center">Prices of apartments are indicative only. Pricing and availability should be confirmed with <a href="#">Tower-International</a>.</p>
-						</div>
+				</div>
+				<div class="row footer-nav">
+					<div class="col-sm-12">
+						<ul class="list-unstyled list-inline text-center kill-margin">
+							<li><a href="#">Landlord Services</a></li>
+							<li><a href="#">Budapest Rentals</a></li>
+							<li><a href="#">Property Sales</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Apartment Budapest</a></li>
+							<li><a href="#">Accounting &amp; Tax Returns</a></li>
+							<li><a href="#">Property Florida</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row footer-copyright">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-center kill-margin">
+							<a href="#">Apartments for rent in Budapest</a> by &copy; Tower International 2014. All rights reserved.<br>
+							Prices of apartments are indicative only. Pricing and availability should be confirmed with <a href="#">Tower-International</a>.
+						</p>
 					</div>
 				</div>
 			</footer>

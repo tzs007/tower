@@ -4,7 +4,7 @@ $(function(){
 
 /* set up the google map */
 var map;
-var bp = new google.maps.LatLng(47.454833, 19.031075);
+var bp = new google.maps.LatLng(47.5141269, 19.0581187);
 
 var MY_MAPTYPE_ID = 'tower';
 
@@ -49,21 +49,17 @@ function initialize() {
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 
-	/*
-	google.maps.event.addListener(map, 'center_changed', function() {
-		// 3 seconds after the center of the map has changed, pan back to the
-		// marker.
-		window.setTimeout(function() {
-			map.panTo(marker.getPosition());
-		}, 3000);
-	});
-	*/
-
 	google.maps.event.addListener(marker, 'click', function() {
 		map.setCenter(marker.getPosition());
-		window.open('http://maps.google.com/maps?q=1119+Budapest,+Allende+park+18,+Hungary','_blank');
+		window.open('https://www.google.hu/maps/search/+H-1132+Budapest,+V%C3%A1ci+%C3%BAt+22-24,+Hungary','_blank');
 	});
 
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+google.maps.event.addDomListener(window, "resize", function() {
+	var center = map.getCenter();
+	google.maps.event.trigger(map, "resize");
+	map.setCenter(center);
+});

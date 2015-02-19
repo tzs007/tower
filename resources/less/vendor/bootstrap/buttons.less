@@ -4,8 +4,14 @@
 
 	/* states */
 
+
 	&-info{
-		text-shadow: 0 1px multiply(@brand-info, @brand-info);
+		.button-variant(@brand-info; #fff; #c6c9d3);
+		font-weight: 700;
+
+		&:hover{
+			.button-variant(#fff; @brand-success; @brand-success);
+		}
 	}
 
 	&-success{
@@ -27,6 +33,10 @@
 	}
 
 	&-demo{
+		.button-variant(#fff; @brand-info; @brand-info);
 		.lh-box-shadow('0 5px 10px #000');
+		text-shadow: 0 1px multiply(@brand-info, @brand-info);
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 }

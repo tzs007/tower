@@ -1,0 +1,129 @@
+/* Mobile view */
+.landlord-services{
+
+	&-title{
+
+	}
+
+	&-subtitle{
+		font-size: @font-size-huge + 4;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+
+	.landlord-service{
+		&:nth-child(n+2){
+			margin-top: 30px;
+		}
+	}
+
+}
+
+.get-in-touch{
+
+	hgroup{
+		margin-bottom: 25px;
+	}
+
+	&-title{
+		font-size: @font-size-h3;
+		font-weight: 300;
+		margin-bottom: 5px;
+	}
+
+	&-subtitle{
+		font-size: @font-size-large;
+		color: @gray-light;
+	}
+
+	/* @Notice: Form controllers overvritten outside of vendor, because ints not the main theme of the general form */
+
+	.form-group{
+
+		.control-label{
+			.lh-transition(all 0.25s ease-in-out);
+			.lh-border-radius(0);
+			border-left: 3px solid #fff;
+			font-size: @font-size-large;
+			font-weight: 600;
+			line-height: 28px;
+
+			&.selected{
+			border-color: @brand-info;
+			}
+
+			.required{
+				color: @brand-danger;
+			}
+		}
+
+		input.form-control{
+			height: 47px;
+		}
+
+		.form-control{
+			.lh-border-radius(0);
+			.lh-placeholder(#d0d0d0);
+			.shadow();
+			border: none;
+			font-size: @font-size-huge;
+			font-weight: 100;
+			resize: vertical;
+
+			&.input-lg{
+				height: 47px;
+				padding: 8px 15px;
+			}
+		}
+
+		.form-control-static{
+			display: inline-block;
+			margin-left: 20px;
+			top: 2px;
+			position: relative;
+			color: @brand-primary;
+
+			a{
+				color: @brand-success;
+				font-weight: 600;
+			}
+
+			strong{
+				font-weight: 600;
+			}
+		}
+
+	}
+
+}
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+	.landlord-service{
+		&:nth-child(n+2){
+			margin-top: 0;
+		}
+	}
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {
+	.landlord-services{
+		&-subtitle{
+			font-size: @font-size-h3;
+			font-weight: 300;
+			margin-bottom: 20px;
+		}
+	}
+
+	.form-group{
+
+		.control-label{
+			font-size: @font-size-huge;
+		}
+
+	}
+}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {}

@@ -1,0 +1,96 @@
+/* Mobile view */
+
+.tower365{
+	background: url('../../../../images/tower365bg.png') left top repeat-x;
+	text-shadow: 0 1px multiply(@brand-primary, @brand-primary);
+
+	&.block{
+		padding: 60px 0;
+	}
+
+	&-title{}
+
+	&-subtitle{}
+
+	&-text{
+		margin-bottom: 30px;
+	}
+
+	h2, h3, h4, p{
+		color: #fff;
+	}
+
+	h2, h3, h4,{
+		text-shadow: 0 2px 1px multiply(@brand-primary, @brand-primary);
+		background-size: cover;
+	}
+
+	h3{
+		font-size: @font-size-large;
+		margin: 5px 0 25px;
+	}
+
+	a[class*="btn-"]{
+		.lh-box-shadow(0 5px 15px rgba(0,0,0,.3));
+	}
+}
+
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+	.tower365{
+		position: relative;
+
+		&.block{
+			padding: 40px 0;
+		}
+
+		.left-image, .right-image{
+			background-size: cover;
+			position: absolute;
+			top: -15px;
+		}
+
+		.left-image{
+			.lh-size(351);
+			background: url('../../../../images/tablet.png') left top repeat-x;
+			left: -220px;
+		}
+
+		.right-image{
+			.lh-size(380, 327);
+			background: url('../../../../images/cupkey.png') left top repeat-x;
+			right: -220px;
+		}
+	}
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {
+	.tower365{
+		&.block{
+			padding: 45px 0 50px;
+		}
+
+		.left-image{
+			left: -180px;
+		}
+
+		.right-image{
+			right: -190px;
+		}
+	}
+}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {
+	.tower365{
+		.left-image{
+			left: 0;
+		}
+
+		.right-image{
+			right: -30px;
+		}
+	}
+}

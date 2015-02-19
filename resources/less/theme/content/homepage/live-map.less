@@ -1,0 +1,110 @@
+/* Mobile view */
+
+
+.live-map{
+	padding-bottom: 0;
+
+	&-title{
+
+	}
+
+	&-subtitle{
+
+	}
+
+	.pin-guide{
+		.text-center;
+		margin-top: 70px;
+		margin-bottom: 25px;
+
+		.rent, .sale{
+			display: inline-block;
+			position: relative;
+
+			strong{
+				.shadow();
+				display: block;
+				background-color: #fff;
+				padding: 5px 15px;
+				font-size: @font-size-medium;
+			}
+
+			.pin{
+				.lh-size(28, 41);
+				.lh-translateX(-50%);
+				position: absolute;
+				top: -41px;
+				left: 50%;
+			}
+		}
+	}
+}
+
+.map{
+	.separator-top();
+	.separator-bottom();
+	height: 400px;
+
+	&-lg{
+		height: 600px;
+	}
+}
+
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+	.live-map{
+
+		&-title{
+			.linea{
+				.hidden-sm;
+			}
+		}
+
+		&-subtitle{
+
+		}
+	}
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {
+	.live-map{
+
+		&-title{
+			.linea{
+				&.left{
+					left: -275px;
+				}
+				&.right{
+					right: -275px;
+				}
+			}
+		}
+
+		&-subtitle{
+
+		}
+	}
+}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {
+	.live-map{
+
+		&-title{
+			.linea{
+				&.left{
+					left: -180px;
+				}
+				&.right{
+					right: -180px;
+				}
+			}
+		}
+
+		&-subtitle{
+
+		}
+	}
+}

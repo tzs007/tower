@@ -1,0 +1,178 @@
+/* Mobile view */
+.bottom{
+	.lh-background-image(linear-gradient(to bottom, #0b253a  0%, #14447c 100%));
+
+	.footer{
+		padding: 60px 0 40px;
+
+		&.block{
+			padding: 50px 0 60px;
+		}
+
+		.title{
+			color: #fff;
+			font-weight: 200;
+		}
+
+		ul{
+			li{
+				color: @brand-info;
+				margin-bottom: 15px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+
+				&:before{
+					.icomoon();
+					content: '\e600';
+					padding-right: 5px;
+				}
+
+				a{
+					color: @brand-info;
+					font-size: @font-size-medium;
+
+					&:hover{
+						color: @brand-secondary;
+					}
+				}
+			}
+		}
+
+		.more-news{
+			.lh-border-radius(2);
+			font-size: @font-size-medium;
+			display: inline-block;
+			color: #fff !important;
+			background-color: #002145;
+			margin-top: 30px;
+			margin-left: 12px;
+			font-weight: 500;
+			padding: 5px 10px;
+
+			&:hover{
+				background-color: @brand-secondary;
+			}
+		}
+
+		&-latest-news{
+
+		}
+
+		&-portfolio{
+			margin-top: 60px;
+
+			.portfolio-logo{
+				margin-bottom: @grid-gutter-width;
+
+				a{
+					color: @brand-info;
+					font-size: @font-size-tiny;
+
+					&:hover{
+						color: #fff;
+					}
+
+					span{
+						.text-center;
+						display: block;
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-nav{
+		background-color: #082f56;
+		padding: 15px 0;
+
+		ul{
+			li{
+				width: 100%;
+				padding: 5px 0;
+
+				a{
+					color: @brand-info;
+					font-size: @font-size-medium;
+					font-weight: 700;
+
+					&:hover{
+						color: @brand-secondary;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-copyright{
+		color: @brand-primary;
+		padding: 30px 0;
+		background-color: #ecf0f1;
+		line-height: @font-size-huge;
+
+		p{
+			font-size: @font-size-base;
+		}
+
+		a{
+			text-decoration: underline;
+
+			&:hover{
+				color: @brand-secondary;
+			}
+		}
+	}
+}
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+	.bottom{
+		.footer{
+			padding: 60px 0 40px;
+
+			.title{
+				font-size: @font-size-h3;
+			}
+
+			&-portfolio{
+				margin-top: 0;
+			}
+		}
+	}
+
+	.footer-nav{
+		ul{
+			li{
+				padding: 0;
+				width: auto !important;
+
+				&:after{
+					content: '\00a0\00a0\2022\00a0';
+					color: @brand-info;
+				}
+
+				&:last-child:after{
+					content: '';
+				}
+			}
+		}
+	}
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {
+	.bottom{
+		.footer{
+			.title{
+				font-size: @font-size-h2;
+			}
+		}
+	}
+}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {
+
+}

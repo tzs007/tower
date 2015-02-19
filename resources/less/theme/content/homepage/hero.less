@@ -1,0 +1,98 @@
+/* Mobile view */
+/* HERO SLIDER */
+
+.hero{
+	.lh-size(100%, auto);
+	.separator-bottom();
+
+	&-title, &-subtitle{
+		.text-left;
+		color: #fff;
+		text-shadow: 0 2px #000;
+
+		span{
+			color: @brand-secondary;
+			font-weight: 500;
+		}
+	}
+
+	&-title{
+		font-size: 36px;
+		border: none !important;
+		margin-bottom: @grid-gutter-width;
+		padding-bottom: 0;
+	}
+
+	&-subtitle{
+		font-weight: 200;
+		font-size: @font-size-large;
+		margin-bottom: 25px;
+		line-height: 25px;
+	}
+
+	.or-separator{
+		display: inline-block;
+		padding: 0 20px;
+		font-weight: 600;
+	}
+
+	p{
+		color: #fff;
+	}
+
+	a{
+		font-weight: 600;
+
+		&:hover{
+			text-decoration: none;
+		}
+
+		&.learn-more{
+			color: @brand-info;
+
+			&:hover{
+				color: @brand-secondary;
+			}
+		}
+	}
+
+	ul{
+		margin-bottom: 40px;
+		padding-left: @grid-gutter-width;
+
+		li{
+			color: #fff;
+			font-weight: 400;
+			font-size: @font-size-medium;
+		}
+	}
+
+}
+
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+	.hero{
+		&-title{
+			font-size: 46px;
+			margin-bottom: @grid-gutter-width;
+		}
+
+		&-subtitle{
+			font-size: @font-size-huge;
+			line-height: 40px;
+		}
+
+		ul{
+			li{
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {}

@@ -1,8 +1,12 @@
+/* Mobile view */
+
 h1{
-	.separator-bottom(1px solid fade(@brand-primary, 20%)) !important;
+	.text-center;
+	position: relative;
+	overflow: hidden;
+	text-shadow: 0 1px #fff;
 	color: @brand-primary;
 	font-weight: 200;
-	padding: 0 0 10px;
 	margin: 0;
 	margin-bottom: 60px;
 }
@@ -47,4 +51,54 @@ blockquote{
 			content: '\00A0 \2014 \00A0';
 		}
 	}
+}
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {
+	h1{
+		.linea{
+			.lh-size(365, 2);
+			.separator-bottom(1px solid @brand-primary) !important;
+			position: absolute;
+			top: 50%;
+			.lh-translateY(-50%);
+
+			&.left{
+				left: -210px;
+			}
+			&.right{
+				right: -210px;
+			}
+		}
+	}
+}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {
+	h1{
+		.linea{
+			&.left{
+				left: -100px;
+			}
+			&.right{
+				right: -100px;
+			}
+		}
+	}
+}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {
+	h1{
+
+	.linea{
+			&.left{
+				left: 0;
+			}
+			&.right{
+				right: 0;
+			}
+	}
+}
+
 }
