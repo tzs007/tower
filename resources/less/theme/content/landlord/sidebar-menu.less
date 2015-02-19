@@ -1,0 +1,82 @@
+/* Mobile view */
+.landlord-services-menu{
+	margin-bottom: @grid-gutter-width;
+
+	.list-group-item{
+		padding: 0;
+
+		&.active{
+			a{
+				color: #fff;
+			}
+		}
+
+		a{
+			display: block;
+			padding: 10px 15px;
+			font-size: @font-size-large;
+
+			&:hover{
+				color: #fff;
+				background-color: @brand-primary;
+			}
+
+			&:before{
+				.icomoon();
+				padding-right: 10px;
+				position: relative;
+			}
+
+			&#service-overview:before{
+				top: 2px;
+				content: '\e053';
+			}
+			&#service-management:before{
+				top: 1px;
+				content: '\e015';
+			}
+			&#service-rentals:before{
+				top: 2px;
+				content: '\e02c';
+			}
+			&#service-sales:before{
+				top: 2px;
+				content: '\e016';
+			}
+			&#service-sales:before{
+				top: 1px;
+				content: '\e016';
+			}
+			&#service-investments:before{
+				top: 1px;
+				content: '\e039';
+			}
+			&#service-renovation:before{
+				top: 1px;
+				content: '\e034';
+			}
+			&#service-accounting:before{
+				top: 1px;
+				content: '\e050';
+			}
+			&#service-tower365:before{
+				top: 1px;
+				content: '\e04c';
+			}
+			&#service-customer-care:before{
+				top: 1px;
+				content: '\e04a';
+			}
+		}
+	}
+}
+
+
+/* Normal tablet view */
+@media only screen and (min-width: @screen-sm) {}
+
+/* Normal desktop view */
+@media only screen and (min-width: @screen-md) {}
+
+/* Large desktop view */
+@media only screen and (min-width: @screen-lg) {}
