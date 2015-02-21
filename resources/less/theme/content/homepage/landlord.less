@@ -43,10 +43,12 @@
 		.control-label{
 			.lh-transition(all 0.25s ease-in-out);
 			.lh-border-radius(0);
+			.text-left;
 			border-left: 3px solid #fff;
 			font-size: @font-size-large;
 			font-weight: 600;
-			line-height: 28px;
+			line-height: 32px;
+			padding-left: 20px;
 
 			&.selected{
 			border-color: @brand-info;
@@ -118,12 +120,12 @@
 		}
 	}
 
-	.form-group{
-
-		.control-label{
-			font-size: @font-size-huge;
+	.get-in-touch{
+		.form-group{
+			label{
+				font-size: @font-size-huge !important;
+			}
 		}
-
 	}
 }
 

@@ -1,24 +1,31 @@
 /* Mobile view */
-.landlord-services{
+.intro{
 	&-content{
+
 		&-title{
 			.text-left;
-			margin-bottom: 0;
 			padding-bottom: 10px;
+			margin-bottom: 0;
+			font-weight: 400;
+			line-height: 48px;
+
+			span{
+				font-weight: 100;
+			}
 		}
 
 		&-subtitle{
-			color: @gray-light;
-			font-size: @font-size-huge;
+			font-weight: 300;
+			margin-bottom: 20px;
+			color: @brand-success;
 		}
 
-		&-undertitle{
-			color: @brand-success;
-			font-size: @font-size-h3;
+		p{
+			font-size: @font-size-large;
+			line-height: 30px;
 		}
 	}
 }
-
 
 /* Normal tablet view */
 @media only screen and (min-width: @screen-sm) {}
