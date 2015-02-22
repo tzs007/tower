@@ -10,11 +10,41 @@
 		&-subtitle{
 			color: @gray-light;
 			font-size: @font-size-huge;
+			font-weight: 200;
 		}
 
 		&-undertitle{
 			color: @brand-success;
 			font-size: @font-size-h3;
+			font-weight: 100;
+		}
+
+		article{
+			margin-top: @grid-gutter-width;
+
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+
+		p{
+			font-size: @font-size-large;
+		}
+
+		ul{
+			.list-unstyled;
+
+			li{
+				font-size: @font-size-large;
+
+				&:before{
+					content: '▪ ';
+				}
+
+				span{
+					color: @brand-secondary;
+				}
+			}
 		}
 	}
 }

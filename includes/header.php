@@ -30,7 +30,7 @@
 						<span class="sr-only">Toggle navigation</span>
 						<i class="icon-hamburger-nav"></i>
 					</button>
-					<a class="navbar-brand" href="/">
+					<a class="navbar-brand" href="index.php">
 						<img src="resources/images/logo.svg" alt="" class="logo">
 					</a>
 				</div>

@@ -80,19 +80,19 @@
 										<div class="form-group">
 											<label for="name" class="col-sm-4 control-label input-lg">Your name: <span class="required">*</span></label>
 											<div class="col-sm-8">
-												<input type="text" class="form-control input-lg" id="name" placeholder="e.g: John Smith jr.">
+												<input type="text" class="form-control input-lg" id="name" placeholder="e.g: John Smith jr." data-validation="required">
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="mobile" class="col-sm-4 control-label input-lg">Your mobile number: <span class="required">*</span></label>
 											<div class="col-sm-8">
-												<input type="password" class="form-control input-lg" id="mobile" placeholder="e.g: +36 20 123 4567">
+												<input type="password" class="form-control input-lg" id="mobile" placeholder="e.g: +36 20 123 4567" data-validation="required">
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="email" class="col-sm-4 control-label input-lg">Your E-mail address: <span class="required">*</span></label>
 											<div class="col-sm-8">
-												<input type="email" class="form-control input-lg" id="email" placeholder="e.g: john.smith.jr@gmail.com">
+												<input type="email" class="form-control input-lg" id="email" placeholder="e.g: john.smith.jr@gmail.com" data-validation="email required">
 											</div>
 										</div>
 										<div class="form-group">
@@ -206,7 +206,7 @@ and more...</p>
 				<div id="map-canvas" class="map map-lg">map</div>
 			</section>
 
-			<footer>
+			<footer class="bottom">
 				<?php include("includes/footer-extended.php"); ?>
 				<?php include("includes/footer-navigation.php"); ?>
 			</footer>

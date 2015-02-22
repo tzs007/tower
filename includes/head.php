@@ -32,6 +32,7 @@
 		<script src="resources/vendor/trmix/dist/trmix.min.js"></script>
 		<script src="resources/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="resources/vendor/owl-carousel2/dist/owl.carousel.min.js"></script>
+		<script src="resources/vendor/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
 		<script src="resources/js/scripts.js"></script>
 
 		<script>
@@ -60,6 +61,8 @@
 				$('.form-control').on('blur', function(){
 					$(this).parents('.form-group').find('.control-label').removeClass('selected');
 				});
+
+				 $.validate();
 			});
 		</script>
 

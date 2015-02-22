@@ -30,7 +30,7 @@
 					<div class="col-xs-4 portfolio-logo">
 						<a href="http://mybudapesthome.com" class="portfolio-logo-link">
 							<img src="resources/images/portfolio/mbh.png" alt="" class="img-responsive">
-							<span>www.mybudapesthome.com</span
+							<span>www.mybudapesthome.com</span>
 						</a>
 					</div>
 				</div>

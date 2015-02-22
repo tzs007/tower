@@ -117,37 +117,63 @@
 							<h1 class="about-content-title">About Tower-International</h1>
 							<p>Tower-International has emerged as one of the market leaders in Real Estate, Property Management &amp; Lettings in Budapest. The Group is made up of more than 50 multi-lingual staff, each of them expert in either property investment, property management, lettings, renovations, furnishing or accounting. So, if you are considering investing in the Budapest property market and you want a company to provide a high quality property management service, look no further, contact Tower-International today and speak to one of our property consultants in English, Hungarian, Spanish, German or Russian.</p>
 						</div>
-						<div class="col-sm-6 about-subscribe">
-							<h4>Budapest Landlord's Newsletter Subscription</h4>
-							<form action="" method="post" role="form">
+						<div id="mc_embed_signup" class="col-sm-6 about-subscribe">
+							<h4 class="about-subscribe-title">Budapest Landlord's Newsletter Subscription</h4>
+							<form action="http://towerbudapest.us3.list-manage2.com/subscribe/post?u=4134d31abba77e40d5f7f8780&amp;id=abdf81365c" method="post" role="form" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank">
 								<fieldset>
-									<div class="row form-group">
+									<div class="row form-group mc-field-group">
 										<div class="col-md-6 col-md-push-6">
 											<p class="form-control-static">* indicates required fields</p>
 										</div>
 										<div class="col-md-6 col-md-pull-6">
-											<label for="" class="control-label sr-only">E-mail address (required field)</label>
-											<input type="email" class="form-control input-lg" id="" name="" placeholder="E-mail address *" required>
+											<label for="mce-EMAIL" class="control-label sr-only">E-mail address (required field)</label>
+											<input type="email" class="form-control input-lg required email" id="mce-EMAIL" name="EMAIL" placeholder="E-mail address *" data-validation="email required">
 										</div>
 									</div>
-									<div class="row form-group">
-										<div class="col-sm-6">
-											<label for="" class="control-label sr-only">First name (required field)</label>
-											<input type="text" class="form-control input-lg" id="" name="" placeholder="First name" required>
+									<div class="row form-group mc-field-group form-group-names">
+										<div class="col-md-6">
+											<label for="mce-FNAME" class="control-label sr-only">First name (required field)</label>
+											<input type="text" class="form-control input-lg" id="mce-FNAME" name="FNAME" placeholder="First name" data-validation="required">
 										</div>
-										<div class="col-sm-6">
-											<label for="" class="control-label sr-only">Last name</label>
-											<input type="text" class="form-control input-lg" id="" name="" placeholder="Last name">
+										<div class="col-md-6">
+											<label for="mce-LNAME" class="control-label sr-only">Last name</label>
+											<input type="text" class="form-control input-lg" id="mce-LNAME" name="LNAME" placeholder="Last name">
 										</div>
 									</div>
 								</fieldset>
+								<fieldset>
+									<h5 class="about-subscribe-subtitle">I am interested in getting your</h5>
+									<div class="row form-group mc-field-group">
+										<div class="col-lg-6">
+											<label for="mce-group[9321]-9321-0" class="checkbox-inline">
+												<input type="checkbox" id="mce-group[9321]-9321-0" name="group[9321][1]" value="1"> Monthly Property Market Report
+											</label>
+										</div>
+										<div class="col-lg-6">
+											<label id="mce-group[9321]-9321-2" class="checkbox-inline">
+												<input type="checkbox" id="mce-group[9321]-9321-2" name="group[9321][4]" value="1"> Property Management Related Offers
+											</label>
+										</div>
+										<div class="col-lg-6">
+											<label for="mce-group[9321]-9321-1" class="checkbox-inline">
+												<input type="checkbox" id="mce-group[9321]-9321-1" name="group[9321][2]" value="1"> Property Sales Related Offers
+											</label>
+										</div>
+										<div class="col-lg-6">
+											<label for="mce-group[9321]-9321-3" class="checkbox-inline">
+												<input type="checkbox" id="mce-group[9321]-9321-3" name="group[9321][8]" value="1"> Property Investment Opportunities
+											</label>
+										</div>
+									</div>
+								</fieldset>
+								<button type="submit" class="btn btn-success btn-lg">Subscribe</button>
 							</form>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="about client-testimonials-white block">
+			<section class="client-testimonial block">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
@@ -164,18 +190,7 @@
 				</div>
 			</section>
 
-			<section class="hero-landlord hidden-xs">
-				<div class="owl-carousel">
-					<div class="owl-carousel-item" style="background-image: url(resources/images/hero1.jpg);">
-						<a href="#" class="hotspot"></a>
-					</div>
-					<div class="owl-carousel-item" style="background-image: url(resources/images/hero2.jpg);">
-						<a href="#" class="hotspot"></a>
-					</div>
-				</div>
-			</section>
-
-			<footer>
+			<footer class="bottom">
 				<?php include("includes/footer-portfolio.php"); ?>
 				<?php include("includes/footer-navigation.php"); ?>
 			</footer>

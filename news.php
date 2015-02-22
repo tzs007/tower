@@ -4,7 +4,7 @@
 
 			<?php include("includes/header.php"); ?>
 
-			<footer>
+			<footer class="bottom">
 				<?php include("includes/footer-extended.php"); ?>
 				<?php include("includes/footer-navigation.php"); ?>
 			</footer>

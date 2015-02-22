@@ -82,6 +82,39 @@
 				}
 			}
 		}
+
+		&-short{
+
+			background: @body-bg url('../../images/bg.png') repeat;
+
+			.footer-portfolio{
+				ul{
+					.clearfix;
+					width: 100%;
+
+					li{
+						.lh-size(13%, 76);
+						position: relative;
+						float: left;
+						display: block;
+						margin-right: 1%;
+
+						&:last-child{
+							margin-right: 0;
+						}
+
+						span{
+							.text-center;
+							display: block;
+							width: 100%;
+							position: absolute;
+							bottom: 0;
+							font-size: @font-size-tiny;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.footer-nav{

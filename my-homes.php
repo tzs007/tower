@@ -6,7 +6,7 @@
 
 			<?php include('includes/client-testimonial.php'); ?>
 
-			<footer>
+			<footer class="bottom">
 				<?php include("includes/footer-extended.php"); ?>
 				<?php include("includes/footer-navigation.php"); ?>
 			</footer>

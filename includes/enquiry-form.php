@@ -8,20 +8,20 @@
 			<form action="" method="" role="form" class="enquiry-form-fields">
 				<fieldset>
 					<div class="form-group">
-						<label for="name" class="sr-only">Your name</label>
-						<input type="text" class="form-control input-lg" id="name" value="" placeholder="Your name *" tabindex="1" required>
+						<label for="enquiry-name" class="sr-only">Your name</label>
+						<input type="text" class="form-control input-lg" id="enquiry-name" name="enquiry-name" value="" placeholder="Your name *" tabindex="1" data-validation="required">
 					</div>
 					<div class="form-group">
-						<label for="mobile" class="sr-only">Your mobile number</label>
-						<input type="tel" class="form-control input-lg" id="mobile" value="" placeholder="Your mobile number *" tabindex="2" required>
+						<label for="enquiry-mobile" class="sr-only">Your mobile number</label>
+						<input type="tel" class="form-control input-lg" id="enquiry-mobile" name="enquiry-mobile" value="" placeholder="Your mobile number *" tabindex="2" data-validation="required">
 					</div>
 					<div class="form-group">
-						<label for="email" class="sr-only">Your email address</label>
-						<input type="email" class="form-control input-lg" id="email" value="" placeholder="Your email address *" tabindex="3" required>
+						<label for="enquiry-email" class="sr-only">Your email address</label>
+						<input type="email" class="form-control input-lg" id="enquiry-email" name="enquiry-email" value="" placeholder="Your email address *" tabindex="3" data-validation="email required">
 					</div>
 					<div class="form-group">
-						<label for="message" class="sr-only">Your message</label>
-						<textarea cols="30" rows="4" class="form-control input-lg" id="message" value="" placeholder="Your message" tabindex="4"></textarea>
+						<label for="enquiry-message" class="sr-only">Your message</label>
+						<textarea cols="30" rows="4" class="form-control input-lg" id="enquiry-message" name="enquiry-message" value="" placeholder="Your message" tabindex="4"></textarea>
 					</div>
 					<div class="form-group">
 						<button class="btn btn-block btn-lg btn-success">Send Enquiry</button>

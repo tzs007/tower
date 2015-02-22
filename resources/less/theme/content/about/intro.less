@@ -1,4 +1,8 @@
 /* Mobile view */
+.map{
+	.lh-size(100%, 200);
+}
+
 .intro{
 	&-content{
 
@@ -28,7 +32,11 @@
 }
 
 /* Normal tablet view */
-@media only screen and (min-width: @screen-sm) {}
+@media only screen and (min-width: @screen-sm) {
+	.map{
+		.lh-size(100%, 400);
+	}
+}
 
 /* Normal desktop view */
 @media only screen and (min-width: @screen-md) {}

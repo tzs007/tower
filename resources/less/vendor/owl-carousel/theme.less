@@ -1,110 +1,79 @@
-.hero{
-	.owl-carousel{
-		//position: relative;
+.owl-carousel{
 
-		&-item{
-			.lh-size(100%, 600);
-			padding: 50px 0;
-		}
+	&-item{
+		.lh-size(100%, 600);
+		padding: 50px 0;
+	}
 
-		.owl-nav{
-			.lh-size(100%, auto);
-			.hidden-xs;
-			//position: absolute;
-			top: 0;
-			left: 0;
+	.owl-nav{
+		.lh-size(100%, auto);
+		.hidden-xs;
+		top: 0;
+		left: 0;
 
-			.owl-prev, .owl-next{
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
+		.owl-prev, .owl-next{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
 
+			.icon-container{
+				.lh-border-radius(0);
+				border: none;
 
+				.icon{
+					font-size: @font-size-huge * 2.8;
+					color: @gray;
 
-				.icon-container{
-					.lh-border-radius(0);
-					border: none;
-
-					.icon{
-						font-size: @font-size-huge * 2.8;
-						color: @gray;
-
-						&:hover{
-							text-shadow: 0 0 20px rgba(255, 255, 255, 1);
-							color: #fff;
-						}
+					&:hover{
+						text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+						color: #fff;
 					}
 				}
 			}
-
-			.owl-prev{
-				left: 20px;
-			}
-
-			.owl-next{
-				right: 0px;
-			}
 		}
 
-		.hotspot{
-			.lh-size(100%, inherit);
+		.owl-prev{
+			left: 20px;
+		}
+
+		.owl-next{
+			right: 0px;
 		}
 	}
 
-	&-landlord{
-		.owl-carousel{
-			.owl-nav{
-				.owl-prev, .owl-next{
-					.icon-container{
-						.icon{
-							font-size: @font-size-huge * 2.8;
-							color: #fff;
-
-							&:hover{
-								text-shadow: 0 0 20px rgba(0, 0, 0, 1);
-								color: @gray;
-							}
-						}
-					}
-				}
-			}
-		}
+	.hotspot{
+		.lh-size(100%, inherit);
 	}
 }
 
 
+
 /* Normal tablet view */
 @media only screen and (min-width: @screen-sm) {
-	.hero{
-		.owl-carousel{
-			&-item{
-				padding: 50px 0;
-				background-size: cover;
-				background-position: top center;
-				background-repeat: no-repeat;
-			}
+	.owl-carousel{
+		&-item{
+			padding: 50px 0;
+			background-size: cover;
+			background-position: top center;
+			background-repeat: no-repeat;
 		}
 	}
 }
 
 /* Normal desktop view */
 @media only screen and (min-width: @screen-md) {
-	.hero{
-		.owl-carousel{
-			&-item{
-				padding: 60px 0;
-			}
+	.owl-carousel{
+		&-item{
+			padding: 60px 0;
 		}
 	}
 }
 
 /* Large desktop view */
 @media only screen and (min-width: @screen-lg) {
-	.hero{
-		.owl-carousel{
-			&-item{
-				padding: 90px 0;
-			}
+	.owl-carousel{
+		&-item{
+			padding: 90px 0;
 		}
 	}
 }

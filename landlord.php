@@ -115,18 +115,9 @@
 
 			<?php include('includes/client-testimonial.php'); ?>
 
-			<section class="hero-landlord hidden-xs">
-				<div class="owl-carousel">
-					<div class="owl-carousel-item" style="background-image: url(resources/images/hero1.jpg);">
-						<a href="#" class="hotspot"></a>
-					</div>
-					<div class="owl-carousel-item" style="background-image: url(resources/images/hero2.jpg);">
-						<a href="#" class="hotspot"></a>
-					</div>
-				</div>
-			</section>
+			<?php include('includes/hero-small.php'); ?>
 
-			<footer>
+			<footer class="bottom">
 				<?php include("includes/footer-portfolio.php"); ?>
 				<?php include("includes/footer-navigation.php"); ?>
 			</footer>
