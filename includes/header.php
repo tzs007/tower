@@ -13,7 +13,7 @@
 								<a href="tel:3613540980" class="visible-xs phone">+3613540980</a>
 								<span class="hidden-xs phone">+3613540980</span>
 							</li>
-							<li class="hidden-xs"><a href="homes.php">My list of homes</a></li>
+							<li class="hidden-xs"><a href="my-homes.php">My list of homes</a></li>
 							<li><a href="#">Váltás magyarra</a></li>
 						</ul>
 					</nav>
