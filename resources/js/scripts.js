@@ -1,65 +1,65 @@
-$(function(){
-	console.log(jQuery.fn.jquery);
-});
+var App = {
 
-/* set up the google map */
-var map;
-var bp = new google.maps.LatLng(47.5141269, 19.0581187);
+	/* jump to property details */
 
-var MY_MAPTYPE_ID = 'tower';
+	propertyLauncher: function(){
+		$('.property-list-item').hover(
+			function(){
+				$(this).find('[class^="item-"]').addClass('item-transparent');
+			},
+			function(){
+				$(this).find('[class^="item-"]').removeClass('item-transparent');
+			}).on('click', function(){
+			window.location.href = $(this).data('href');
+		});
+	},
 
-function initialize() {
+	/* load gmap */
 
-	var featureOpts = [{"featureType":"all","stylers":[{"saturation":0},{"hue":"#e7ecf0"}]},{"featureType":"road","stylers":[{"saturation":-70}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"simplified"},{"saturation":-60}]}];
+	/* owl carousel */
 
-	var mapOptions = {
-		scrollwheel: false,
-		draggable: true,
-		disableDefaultUI: true,
-		zoom: 11,
-		center: bp,
-		mapTypeId: MY_MAPTYPE_ID,
-		mapTypeControl: false,
-		zoomControl: true,
-		zoomControlOptions: {
-			style: google.maps.ZoomControlStyle.SMALL,
-			position: google.maps.ControlPosition.LEFT_TOP
-		},
-		scaleControl: false,
-		streetViewControl: true,
-		streetViewControlOptions: {
-			position: google.maps.ControlPosition.LEFT_TOP
-		}
+	owl: function(){
+		$(".owl-carousel").owlCarousel({
+			loop:false,
+			margin:0,
+			nav:true,
+			navText: [
+				'<div class="icon-container"><i class="icon icon-arrow-left"></i></div>',
+				'<div class="icon-container"><i class="icon icon-arrow-right"></i></div>'
+			],
+			responsive:{
+				0:{
+					items:1
+				}
+			}
+		});
+	},
 
-	};
+	/* index contact form */
 
-	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	formLabelColorizer: function(){
+		$('.form-control').on('focus', function(){
+			$(this).parents('.form-group').find('.control-label').addClass('selected');
+		});
 
-	var styledMapOptions = {
-		name: 'Tower International'
-	};
+		$('.form-control').on('blur', function(){
+			$(this).parents('.form-group').find('.control-label').removeClass('selected');
+		});
+	},
 
-	var marker = new google.maps.Marker({
-		icon: 'resources/images/pin-green.png',
-		position: map.getCenter(),
-		map: map
-	});
+	/* scroll to */
 
-	var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-
-	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-
-	google.maps.event.addListener(marker, 'click', function() {
-		map.setCenter(marker.getPosition());
-		window.open('https://www.google.hu/maps/search/+H-1132+Budapest,+V%C3%A1ci+%C3%BAt+22-24,+Hungary','_blank');
-	});
+	roll: function(){
+		$('.roller').click(function(e) {
+			e.preventDefault();
+			var t = $(this.hash);
+			if(t){
+				var n = t.offset().top - 130;
+				$('html, body').animate({
+					scrollTop: n
+				}, 500);
+			}
+		});
+	}
 
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-google.maps.event.addDomListener(window, "resize", function() {
-	var center = map.getCenter();
-	google.maps.event.trigger(map, "resize");
-	map.setCenter(center);
-});

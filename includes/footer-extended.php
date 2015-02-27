@@ -10,7 +10,7 @@
 					<li><a href="#">Hungarian Costes Is the 25th Best Restaurant of the World</a></li>
 					<li><a href="#">3 Things to Do if There Was a Break-In</a></li>
 				</ul>
-				<a href="#" class="more-news">Click for more Budapest and Tower news &gt;</a>
+				<a href="news.php" class="more-news">Click for more Budapest and Tower news &gt;</a>
 			</div>
 			<div class="col-sm-6 footer-portfolio">
 				<h2 class="title">Check our portfolio</h2>

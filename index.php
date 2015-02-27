@@ -26,8 +26,8 @@
 										<li>Experienced, multi langual staff</li>
 									</ul>
 									<p>
-										<a href="#" class="btn btn-lg btn-cta text-uppercase">Contact us</a>
-										<span class="or-separator">or</span><a href="landlord.html" class="learn-more">learn more</a>
+										<a href="#contact" class="btn btn-lg btn-cta text-uppercase roller">Contact us</a>
+										<span class="or-separator">or</span><a href="landlord.php" class="learn-more">learn more</a>
 									</p>
 								</div>
 							</div>
@@ -65,11 +65,11 @@
 									<p>Professional customer care, account management, Tower365 administration page for <span class="important">24/7 access</span> to your Budapest property.</p>
 								</div>
 								<div class="col-sm-12 text-center block-cta">
-									<p><a href="landlord.html" class="btn btn-info btn-lg">Learn more</a></p>
+									<p><a href="landlord.php" class="btn btn-info btn-lg">Learn more</a></p>
 									<p class="or-separator">or</p>
 								</div>
 
-								<div class="col-sm-10 col-sm-offset-1 get-in-touch">
+								<div class="col-sm-10 col-sm-offset-1 get-in-touch" id="contact">
 
 									<hgroup class="text-center">
 										<h2 class="kill-margin get-in-touch-title">Get in touch now</h2>
@@ -104,7 +104,7 @@
 										<div class="form-group">
 											<div class="col-sm-offset-4 col-sm-8">
 												<button type="submit" class="btn btn-success btn-lg">Send enquiry</button>
-												<p class="form-control-static input-lg or-separator">or&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">Contact us</a> on <strong>+36 1 354 0980</strong></p>
+												<p class="form-control-static input-lg or-separator">or&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.php">Contact us</a> on <strong>+36 1 354 0980</strong></p>
 											</div>
 										</div>
 									</form>
@@ -124,14 +124,13 @@
 								<h5 class="infopanel-subtitle">We have tenants waiting for your property</h5>
 								<h6 class="infopanel-undertitle">Working investments</h6>
 							</hgroup>
-
 							<p class="infopanel-text">
 								Through its' professional marketing channels and<br>
 								team of experienced letting agents Tower rents out<br>
 								dozen of properties each month, ensuring the highest<br>
 								occupancy ratio for property investors.
 							</p>
-							<a href="#" class="btn btn-info btn-lg">Let your property</a>
+							<a href="rentals.php" class="btn btn-info btn-lg">Let your property</a>
 						</div>
 						<div class="col-sm-6 text-center infopanel right">
 							<hgroup>
@@ -139,14 +138,13 @@
 								<h5 class="infopanel-subtitle">Selling at the right time. Selling at the right price.</h5>
 								<h6 class="infopanel-undertitle">Selling with Tower</h6>
 							</hgroup>
-
 							<p class="infopanel-text">
 								Free valuation &bull; Over 1000 properties sold &bull; 10 year's experience<br>
 								Multi-langual staff &bull; No fee, all free advertisements!<br>
 								Extensive marketing exposure<br>
 								Independent lawyers, specialized in property law
 							</p>
-							<a href="#" class="btn btn-info btn-lg">Sell your property</a>
+							<a href="sales.php" class="btn btn-info btn-lg">Sell your property</a>
 						</div>
 					</div>
 				</div>
@@ -164,7 +162,6 @@
 								<h2 class="tower365-title light kill-border kill-margin">Tower 365</h2>
 								<h3 class="tower365-subtitle kill-border">24/7 access to your Budapest property</h3>
 							</hgroup>
-
 							<p class="tower365-text">Through Tower's unique login system you will get 24/7 access to your
 Budapest property. See financial transactions, up-to-date activity notes,
 your tax returns, your property details
@@ -212,5 +209,13 @@ and more...</p>
 			</footer>
 
 		</div>
+
+		<!-- call script -->
+
+		<script>
+			App.owl();
+			App.formLabelColorizer();
+			$.validate();
+		</script>
 	</body>
 </html>

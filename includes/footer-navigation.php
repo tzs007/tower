@@ -18,4 +18,13 @@
 			Prices of apartments are indicative only. Pricing and availability should be confirmed with <a href="#">Tower-International</a>.
 		</p>
 	</div>
+	<div class="col-sm-12">
+		<p class="text-center kill-margin">
+			<a href="#top" class="roller">Back to top</a>
+		</p>
+	</div>
 </div>
+
+<script>
+	App.roll();
+</script>
