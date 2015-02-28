@@ -10,13 +10,13 @@
 		&-subtitle{
 			color: @gray-light;
 			font-size: @font-size-huge;
-			font-weight: 200;
+			font-weight: 300;
 		}
 
 		&-undertitle{
-			color: @brand-success;
+			color: @brand-secondary;
 			font-size: @font-size-h3;
-			font-weight: 100;
+			font-weight: 300;
 		}
 
 		article{
@@ -36,13 +36,34 @@
 
 			li{
 				font-size: @font-size-large;
+				margin-bottom: 5px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
 
 				&:before{
 					content: '▪ ';
 				}
 
 				span{
-					color: @brand-secondary;
+					color: @brand-success;
+				}
+			}
+		}
+
+		ol {
+			padding-left: 25px;
+			li{
+				font-size: @font-size-large;
+				margin-bottom: 5px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+
+				span{
+					color: @brand-success;
 				}
 			}
 		}
