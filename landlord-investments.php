@@ -77,5 +77,9 @@
 			</footer>
 
 		</div>
+		<!-- scripts -->
+		<script>
+			App.owl();
+		</script>
 	</body>
 </html>

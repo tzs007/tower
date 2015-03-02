@@ -60,7 +60,7 @@
 
 			<?php include('includes/client-testimonial.php'); ?>
 
-			<?php include('includes/hero-small.php'); ?>
+			<?php include("includes/hero-small.php"); ?>
 
 			<footer class="bottom">
 				<?php include("includes/footer-portfolio.php"); ?>
@@ -70,5 +70,8 @@
 		</div>
 
 		<!-- scripts -->
+		<script>
+			App.owl();
+		</script>
 	</body>
 </html>

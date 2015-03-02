@@ -2,18 +2,18 @@
 	<section class="row panel panel-default property-list-item">
 		<div class="col-sm-4 item-thumb" style="background-image:url('resources/images/property.jpg')">&nbsp;</div>
 		<div class="col-sm-8">
-			<h3 style="border-bottom: 1px solid #ccc">
-				<button class="btn btn-xs btn-cta pull-right text-uppercase" style="margin-top:-2px">Add to my list</button>
+			<h3 style="border-bottom: 1px solid #ccc; margin-top:15px; padding:0 0 15px; font-size: 24px;">
+				<button class="btn btn-sm btn-cta pull-right text-uppercase" style="margin-top:-2px">Add to my list</button>
 				Luxury in Felvinci Street
 			</h3>
 			<div class="row">
 				<div class="col-sm-8 col-md-9">
-					<p>A clever interior redesign has added a stylish edge to this unique two level residence and made it a light filled home with many smart modern finishes throughout. It offers a designer living space with a layout that embraces easycare living complete garden access with parking. </p>
-					<span>58.300.000 HUF</span>
+					<p style="font-size: 18px; line-height: 28px;">A clever interior redesign has added a stylish edge to this unique two level residence and made it a light filled home with many smart modern finishes throughout. It offers a designer living space with a layout that embraces easycare living complete garden access with parking. </p>
+					<span style="font-size:36px; font-weight:100; color:#e74c3c">58.300.000 HUF</span>
 				</div>
 				<div class="col-sm-4 col-md-3">
-					<aside>
-						<h4>Ref.: 1234</h4>
+					<aside style="font-size: 16px;">
+						<h4 style="margin:20px 0 30px; font-size: 24;">Ref.: 1234</h4>
 						<strong>District:</strong> 12<br>
 						<strong>Bedroom(s):</strong> 3<br>
 						<strong>Size:</strong> 138 m<sup>2</sup>

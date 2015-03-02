@@ -62,7 +62,7 @@
 				</div>
 			</section>
 
-			<section id="property-list-view" class="property-list" style="display:block !important;">
+			<main id="property-list-view" class="property-list" style="display:block !important;">
 				<div class="container">
 					<div class="row">
 						<?php for($i = 1; $i<=15; $i++): ?>
@@ -70,7 +70,7 @@
 						<?php endfor; ?>
 					</div>
 				</div>
-			</section>
+			</main>
 
 			<?php include('includes/pagination.php') ?>
 

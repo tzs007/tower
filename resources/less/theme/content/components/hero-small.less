@@ -1,9 +1,25 @@
 /* Mobile view */
 .hero-sm{
 	.owl-carousel{
+
 		&-item{
 			.lh-size(100%, 395) !important;
 			padding: 0;
+		}
+
+		.owl-nav{
+			.owl-prev, .owl-next{
+				.icon-container{
+					.icon{
+						color: #fff;
+
+						&:hover{
+							text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+							color: @brand-danger;
+						}
+					}
+				}
+			}
 		}
 	}
 }

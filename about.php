@@ -8,7 +8,7 @@
 				<div id="map-canvas" class="map"></div>
 			</section>
 
-			<section class="intro block-half">
+			<main class="intro block-half">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-7 col-md-8 intro-content">
@@ -35,7 +35,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</main>
 
 			<section class="team block">
 				<div class="container">

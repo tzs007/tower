@@ -36,7 +36,7 @@
 				</div>
 			</section>
 
-			<section id="property-mosaic-view" class="property-list">
+			<main id="property-mosaic-view" class="property-list">
 				<div class="container">
 					<div class="row">
 					<?php for($i = 1; $i<=15; $i++): ?>
@@ -44,7 +44,7 @@
 					<?php endfor; ?>
 					</div>
 				</div>
-			</section>
+			</main>
 
 			<section id="property-list-view" class="property-list">
 				<div class="container">

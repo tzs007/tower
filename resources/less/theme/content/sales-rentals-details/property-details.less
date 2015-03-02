@@ -87,6 +87,35 @@
 				border-top: 1px solid #fff;
 			}
 		}
+
+		&-sidebar{
+			ul{
+				&:first-child{
+					padding-bottom: 15px;
+					margin-bottom: 15px;
+					border-bottom: 1px solid #ccc;
+				}
+
+				li{
+					font-size: @font-size-medium;
+					margin-bottom: 3px;
+				}
+			}
+
+			.property{
+				&-price{
+					color: @brand-secondary;
+					font-size: @font-size-huge;
+					font-weight: 100;
+					margin-top: -5px;
+
+					&-title{
+						color: @brand-primary;
+						margin: 0;
+					}
+				}
+			}
+		}
 	}
 }
 

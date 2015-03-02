@@ -219,15 +219,32 @@ and more...</p>
 		</script>
 
 		<script>
+
+			var infowindowHTML1= [
+				'<div class="infowindow">',
+					'<a href="property-details.php">',
+						'<img src="resources/images/property.jpg" alt="">',
+						'<strong>Somewhere over the Rainbow</strong>',
+						'<small>2 bedrooms &bull; 80m<sup>2</sup></small>',
+						'<small><b>Rented for:</b> 150.000 HUF &bull; <b>Yield:</b> 4.10%</small>',
+						'<hr>',
+						'<span>10.000.000 HUF</span>',
+					'</a>',
+				'</div>'
+				].join(''),
+				infowindowHTML2 = [
+				'<div class="infowindow">',
+					'<a href="property-details.php">',
+						'<img src="resources/images/property.jpg" alt="">',
+						'<strong>Luxury in Felvinci Street</strong>',
+						'<small>3 bedrooms &bull; 123m<sup>2</sup></small>',
+						'<span>583.000 HUF</span>',
+					'</a>',
+				'</div>'
+				].join('');
 			var places = [
-				['pin-green.png', 47.4880756, 18.998205, 'property-details.php', '<div class="info_content">' +
-					'<h3>Lorem ipsum</h3>' +
-					'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reiciendis, nobis, soluta quaerat ipsum rem aliquam possimus similique repellat, necessitatibus aspernatur natus provident corporis modi veritatis sint earum id quia?</p>' +
-					'</div>'],
-				['pin-orange.png', 47.54169, 19.005834, 'property-details.php', '<div class="info_content">' +
-					'<h3>Lorem ipsum</h3>' +
-					'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid recusandae eligendi voluptas deserunt ducimus totam saepe, esse tempora voluptates debitis sequi quaerat labore optio, maxime quam libero. Doloribus, eius, dolorum!</p>' +
-					'</div>'],
+				['pin-green.png', 47.4880756, 18.998205, 'property-details.php', infowindowHTML1],
+				['pin-orange.png', 47.54169, 19.005834, 'property-details.php', infowindowHTML2],
 			];
 		</script>
 

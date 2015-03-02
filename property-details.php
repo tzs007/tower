@@ -38,7 +38,7 @@
 				</div>
 			</section>
 
-			<section class="property-details">
+			<main class="property-details">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-8 col-md-9 property-details-content">
@@ -85,8 +85,8 @@
 										<li><strong>Air conditioned</strong> Yes</li>
 									</ul>
 									<ul class="list-unstyled">
-										<li><strong>Selling price:</strong></li>
-										<li class="related-property-price">58.300.000 HUF</li>
+										<li class="property-price-title"><strong>Selling price:</strong></li>
+										<li class="property-price">58.300.000 HUF</li>
 									</ul>
 									<button class="btn btn-info btn-block btn-lg btn-info btn-add-to-list">Add to my list</button>
 								</div>
@@ -94,7 +94,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</main>
 
 			<section class="related-properties block">
 				<div class="container">
