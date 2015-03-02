@@ -1,8 +1,8 @@
-<div class="footer">
+<div class="footer" id="#footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 footer-latest-news">
-				<h2 class="title">Latest news and articles</h2>
+				<h2 class="title">Latest news <span class="hidden-xs">and articles</span></h2>
 				<ul class="list-unstyled kill-margin">
 					<li><a href="#">How to get more from your Budapest apartment?</a></li>
 					<li><a href="#">Record-Breaking Sales on the real-Estate Market</a></li>

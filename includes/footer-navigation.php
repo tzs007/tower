@@ -20,11 +20,12 @@
 	</div>
 	<div class="col-sm-12">
 		<p class="text-center kill-margin">
-			<a href="#top" class="roller">Back to top</a>
+			<a href="#top" class="btn btn-default btn-sm roller">Back to top</a>
 		</p>
 	</div>
 </div>
 
 <script>
 	App.roll();
+	$.validate();
 </script>

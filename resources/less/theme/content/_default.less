@@ -46,12 +46,32 @@ body{
 	color: @brand-secondary;
 }
 
+.roller{
+	margin-top: 20px;
+}
+
+.hyphen{
+	position: absolute;
+	right: -3px;
+	top: 12px;
+}
+
 /* Normal tablet view */
 @media only screen and (min-width: @screen-sm) {
+
+	body{
+		padding-top: 218px;
+	}
+
 }
 
 /* Normal desktop view */
 @media only screen and (min-width: @screen-md) {
+
+	body{
+		padding-top: 110px;
+	}
+
 	a, button, .btn, i, [class^="item-"]{
 		.lh-transition(all 0.25s ease-in-out);
 

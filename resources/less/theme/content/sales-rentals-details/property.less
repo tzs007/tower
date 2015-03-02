@@ -26,15 +26,8 @@
 			}
 
 			.advanced-search{
-				display: inline-block;
-				margin: 6px 0 0 -20px;
-				color: @brand-secondary;
-				font-size: @font-size-large - 2;
-				font-weight: 600;
-
-				&:hover{
-					color: @brand-primary;
-				}
+				.button-variant(#fff; @brand-danger; @brand-danger);
+				margin: 0;
 			}
 
 			.form-group{
@@ -98,8 +91,13 @@
 
 	&-list{
 
+		&#property-list-view{
+			display: none;
+		}
+
 		&-item{
-			.lh-size(100%, 270);
+			width: 100%;
+			min-height: 270px;
 			background-repeat: no-repeat;
 			background-position: center center;
 			background-size: cover;
@@ -109,6 +107,13 @@
 			.item{
 				position: relative;
 				margin-bottom: @grid-gutter-width;
+
+				&-thumb{
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-size: cover;
+					height: 270px;
+				}
 
 				&-transparent{
 
@@ -139,18 +144,20 @@
 						margin: -3px -8px;
 						color: #fff;
 						font-weight: 700;
+						text-shadow: 0 1px multiply(@brand-cta, @brand-cta);
 
 						&:hover{
 							background-color: @brand-secondary;
+							text-shadow: 0 1px multiply(@brand-secondary, @brand-secondary);
 						}
 					}
 				}
 
 				&-bottom{
 					position: absolute;
-					bottom: @grid-gutter-width;
-					left: @grid-gutter-width / 2 + 1;
-					right: @grid-gutter-width / 2 + 1;
+					bottom: -1px;
+					left: @grid-gutter-width / 2;
+					right: @grid-gutter-width / 2;
 				}
 
 				&-title{
@@ -197,13 +204,100 @@
 
 		}
 	}
+
+	&-paginate{
+		margin-bottom: @grid-gutter-width * 2;
+
+		.btn-paginate{
+			&-control{
+				.text-uppercase;
+			}
+
+			&-number{
+				.text-uppercase;
+				margin: 0 5px;
+			}
+		}
+	}
+}
+
+#mobile-enquiry-form{
+	margin: 60px 0 0;
 }
 
 /* Normal tablet view */
-@media only screen and (min-width: @screen-sm) {}
+@media only screen and (min-width: @screen-sm) {
+
+	#mobile-enquiry-form{
+		margin-bottom: @grid-gutter-width * 2;
+	}
+
+	#tower-myhomes{
+		.hidden-form{
+			position: absolute;
+			top: -410px;
+			right: 15px;
+		}
+	}
+
+	#tower-rentals,
+	#tower-sales{
+		.sales-map, .rental-map{
+			margin-top: -400px;
+		}
+
+		.hidden-form{
+			position: absolute;
+			top: -605px;
+			right: 15px;
+		}
+	}
+
+	.property{
+		&-list{
+			&-item{
+				.item{
+					&-top{
+						.btn-add-to-list{
+							margin-top: -23px;
+						}
+					}
+
+					&-bottom{
+						bottom: @grid-gutter-width;
+					}
+				}
+			}
+		}
+
+		&-search{
+			&-content{
+				.advanced-search{
+					.button-variant(@brand-danger; #fff; @brand-danger);
+					height: 33px;
+					margin: 1px 0 0 -20px;
+				}
+			}
+		}
+	}
+}
 
 /* Normal desktop view */
-@media only screen and (min-width: @screen-md) {}
+@media only screen and (min-width: @screen-md) {
+	.property{
+		&-list{
+			&-item{
+				.item{
+					&-top{
+						.btn-add-to-list{
+							margin-top: -3px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 /* Large desktop view */
 @media only screen and (min-width: @screen-lg) {}

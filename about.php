@@ -5,7 +5,7 @@
 		<?php include("includes/header.php"); ?>
 
 			<section class="about-map">
-				<div id="map-canvas" class="map">map</div>
+				<div id="map-canvas" class="map"></div>
 			</section>
 
 			<section class="intro block-half">
@@ -196,5 +196,14 @@
 			</footer>
 
 		</div>
+		<script>
+			var places = [
+				['pin-about.png', 47.5141269, 19.0581187]
+			];
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="resources/js/google-map.js"></script>
+		<script src="resources/js/google-map-property.js"></script>
+
 	</body>
 </html>

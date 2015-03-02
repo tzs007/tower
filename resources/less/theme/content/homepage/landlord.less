@@ -36,7 +36,7 @@
 		color: @gray-light;
 	}
 
-	/* @Notice: Form controllers overvritten outside of vendor, because ints not the main theme of the general form */
+	/* @Notice: Form controllers overvritten outside of vendor, because it's not the main theme of the general form */
 
 	.form-group{
 
@@ -79,7 +79,8 @@
 		}
 
 		.form-control-static{
-			display: inline-block;
+			.text-center;
+			display: block;
 			margin-left: 20px;
 			top: 2px;
 			position: relative;
@@ -93,6 +94,11 @@
 			strong{
 				font-weight: 600;
 			}
+		}
+
+		.btn{
+			display: block;
+			width: 100%;
 		}
 
 	}
@@ -125,6 +131,16 @@
 			label{
 				font-size: @font-size-huge !important;
 			}
+		}
+
+		.form-control-static{
+			.text-left !important;
+			display: inline-block !important;
+		}
+
+		.btn{
+			display: inline !important;
+			width: auto !important;
 		}
 	}
 }

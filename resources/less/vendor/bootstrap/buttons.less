@@ -1,9 +1,13 @@
 .btn{
-	text-transform: uppercase;
+	.text-uppercase;
 	font-weight: 600;
 
 	/* states */
-
+	&-default{
+		.text-uppercase;
+		.button-variant(@gray; #fff; #fff);
+		box-shadow: 0 1px 1px rgba(0,0,0,.3);
+	}
 
 	&-info{
 		.button-variant(@brand-info; #fff; #c6c9d3);
@@ -38,5 +42,12 @@
 		text-shadow: 0 1px multiply(@brand-info, @brand-info);
 		padding-left: 25px;
 		padding-right: 25px;
+	}
+
+	&-add-to-list{
+		.text-uppercase;
+		.button-variant(#fff; @brand-info; @brand-info);
+		text-shadow: 0 1px multiply(@brand-info, @brand-info);
+		text-shadow: 0 1px multiply(@brand-info, @brand-info);
 	}
 }

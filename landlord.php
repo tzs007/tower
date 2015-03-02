@@ -10,7 +10,7 @@
 
 						<?php include('includes/landlord-navigation.php'); ?>
 
-						<div class="col-sm-7 col-md-8 col-sm-pull-5 col-md-pull-4 landlord-services-content">
+						<div class="col-sm-7 col-md-8 col-sm-pull-5 col-md-pull-4 landlord-services-content" id="landlord-content">
 							<article>
 								<hgroup>
 									<h1 class="landlord-services-content-title">Landlord Services</h1>
@@ -42,7 +42,7 @@
 
 								<!-- 16:9 aspect ratio -->
 								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R_wPtsLPGww" allowfullscreen></iframe>
+									<iframe src="//player.vimeo.com/video/103991711?color=ff9933&amp;portrait=0" class="embed-responsive-item" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 								</div>
 
 							</article>
@@ -70,11 +70,5 @@
 		</div>
 
 		<!-- scripts -->
-
-		<script>
-			$(function(){
-				$('.enquiry-form').stick_in_parent();
-			});
-		</script>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-<div class="enquiry-form">
+<div class="enquiry-form" id="contact-form">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h2 class="enquiry-form-title">Get in touch now</h2>

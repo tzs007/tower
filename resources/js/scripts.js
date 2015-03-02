@@ -10,11 +10,9 @@ var App = {
 			function(){
 				$(this).find('[class^="item-"]').removeClass('item-transparent');
 			}).on('click', function(){
-			window.location.href = $(this).data('href');
-		});
+				window.location.href = $(this).data('href');
+			});
 	},
-
-	/* load gmap */
 
 	/* owl carousel */
 
@@ -47,7 +45,7 @@ var App = {
 		});
 	},
 
-	/* scroll to */
+	/* scroll to position */
 
 	roll: function(){
 		$('.roller').click(function(e) {
@@ -58,6 +56,86 @@ var App = {
 				$('html, body').animate({
 					scrollTop: n
 				}, 500);
+			}
+		});
+	},
+
+	/* property page animations */
+
+	showMapAndForm: function(){
+		$('#btn-contact').on('click', function(e){
+			e.preventDefault();
+			$(this).css('outline','none');
+
+			$('.sales-map').animate({
+				marginTop: "0"
+			}, {
+				duration: 500,
+				easing: 'easeOutQuint'
+			});
+
+			$('.hidden-form').delay(100).animate({
+				top: "-410"
+			}, {
+				duration: 700,
+				easing: 'easeOutBack'
+			});
+			return false;
+		});
+	},
+
+	/* gallery opener */
+
+	showFullGallery: function(){
+		$('#btn-gallery').on('click', function(e){
+			e.preventDefault();
+
+			$('#full-gallery').slideToggle();
+		})
+	},
+
+	/* gallery opener */
+
+	showAllRelatedProperties: function(){
+		$('#btn-related-properties').on('click', function(e){
+			e.preventDefault();
+
+			$('#all-related-properties').slideToggle();
+		})
+	},
+
+	/* switch between property content views (list|mosaic) */
+
+	switchView: function(){
+		var view = "mosaic";
+
+		$('#property-mosaic-view-switch').on('click', function(e){
+
+			e.preventDefault();
+
+			$(this).addClass('active');
+			$('#property-list-view-switch').removeClass('active');
+
+			if(view != "mosaic"){
+				$('#property-mosaic-view').show();
+				$('#property-list-view').hide();
+
+				view = "mosaic";
+			}
+		});
+
+		$('#property-list-view-switch').on('click', function(e){
+
+			e.preventDefault();
+
+			$(this).addClass('active');
+			$('#property-mosaic-view-switch').removeClass('active');
+
+			if(view != "list"){
+				$('#property-mosaic-view').hide();
+				$('#property-list-view').show();
+
+				view = "list";
 			}
 		});
 	}

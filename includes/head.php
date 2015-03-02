@@ -35,17 +35,15 @@
 		<link rel="apple-touch-icon" sizes="60x60" href="resources/images/icons/appicon-60.png">
 		<link rel="apple-touch-icon" sizes="57x57" href="resources/images/icons/appicon-57.png">
 
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-
 		<script src="resources/vendor/html5shiv/dist/html5shiv.min.js"></script>
 		<script src="resources/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="resources/vendor/jquery-easing-original/jquery.easing.1.3.min.js"></script>
+		<script src="resources/vendor/jquery-easing-original/jquery.easing.compatibility.js"></script>
 		<script src="resources/vendor/respondJS/dest/respond.min.js"></script>
 		<script src="resources/vendor/trmix/dist/trmix.min.js"></script>
 		<script src="resources/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="resources/vendor/owl-carousel2/dist/owl.carousel.min.js"></script>
 		<script src="resources/vendor/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
-		<script src="resources/vendor/sticky-kit/jquery.sticky-kit.min.js"></script>
-		<script src="resources/js/google-map.js"></script>
 		<script src="resources/js/scripts.js"></script>
 	</head>
 	<body id="top">

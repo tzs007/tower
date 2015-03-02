@@ -88,19 +88,22 @@
 			background: @body-bg url('../../images/bg.png') repeat;
 
 			.footer-portfolio{
+
+				margin: 0;
+
 				ul{
 					.clearfix;
+					.text-center;
 					width: 100%;
 
 					li{
-						.lh-size(13%, 76);
+						.lh-size(100%, auto);
 						position: relative;
-						float: left;
 						display: block;
-						margin-right: 1%;
+						margin: 0 auto 20px;
 
 						&:last-child{
-							margin-right: 0;
+							margin-bottom: 0;
 						}
 
 						span{
@@ -172,6 +175,32 @@
 			&-portfolio{
 				margin-top: 0;
 			}
+
+			&-short{
+				.footer-portfolio{
+					margin-top: 30px;
+
+					ul{
+						margin: 0;
+
+						li{
+							.lh-size(13%, 40);
+							position: relative;
+							float: left;
+							display: block;
+							margin-right: 1%;
+
+							&:last-child{
+								margin-right: 0;
+							}
+
+							img{
+								.img-responsive;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -200,6 +229,32 @@
 		.footer{
 			.title{
 				font-size: @font-size-h2;
+			}
+
+			&-short{
+				.footer-portfolio{
+					margin-top: 30px;
+
+					ul{
+						margin: 0;
+
+						li{
+							.lh-size(13%, 70);
+							position: relative;
+							float: left;
+							display: block;
+							margin-right: 1%;
+
+							&:last-child{
+								margin-right: 0;
+							}
+
+							img{
+								.img-responsive;
+							}
+						}
+					}
+				}
 			}
 		}
 	}

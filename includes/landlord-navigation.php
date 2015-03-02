@@ -32,7 +32,7 @@
 			</ul>
 		</div>
 	</div>
-	<div id="enquiry-form " class="hidden-xs">
+	<div id="enquiry-form" class="hidden-xs">
 		<?php include("includes/enquiry-form.php"); ?>
 	</div>
 </div>

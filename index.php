@@ -9,7 +9,7 @@
 					<div class="owl-carousel-item" style="background-image:url(resources/images/hero1.jpg)">
 						<div class="container">
 							<div class="row">
-								<div class="col-sm-9 col-sm-offset-3 col-lg-8 col-lg-offset-4">
+								<div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-5 col-lg-8 col-lg-offset-4">
 									<hgroup>
 										<h1 class="hero-title">Profit from your Budapest property</h1>
 										<h2 class="hero-subtitle">
@@ -76,7 +76,7 @@
 										<h3 class="kill-margin get-in-touch-subtitle">and we will contact you within 24 hours</h3>
 									</hgroup>
 
-									<form action="" class="form-horizontal">
+									<form action="" method="" role="form" class="form-horizontal">
 										<div class="form-group">
 											<label for="name" class="col-sm-4 control-label input-lg">Your name: <span class="required">*</span></label>
 											<div class="col-sm-8">
@@ -181,7 +181,7 @@ and more...</p>
 								<h1 class="live-map-title kill-margin kill-border">
 									<span class="linea left"></span>
 									<span class="linea right"></span>
-									Live map about our listed properties
+									Live map <span class="hidden-xs">about our listed properties</span>
 								</h1>
 								<h5 class="live-map-subtitle kill-margin">That map shows you properties for sale and for rent. Click on them for details.</h5>
 							</hgroup>
@@ -200,7 +200,7 @@ and more...</p>
 						</div>
 					</div>
 				</div>
-				<div id="map-canvas" class="map map-lg">map</div>
+				<div id="map-canvas" class="map map-lg"></div>
 			</section>
 
 			<footer class="bottom">
@@ -217,5 +217,22 @@ and more...</p>
 			App.formLabelColorizer();
 			$.validate();
 		</script>
+
+		<script>
+			var places = [
+				['pin-green.png', 47.4880756, 18.998205, 'property-details.php', '<div class="info_content">' +
+					'<h3>Lorem ipsum</h3>' +
+					'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reiciendis, nobis, soluta quaerat ipsum rem aliquam possimus similique repellat, necessitatibus aspernatur natus provident corporis modi veritatis sint earum id quia?</p>' +
+					'</div>'],
+				['pin-orange.png', 47.54169, 19.005834, 'property-details.php', '<div class="info_content">' +
+					'<h3>Lorem ipsum</h3>' +
+					'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid recusandae eligendi voluptas deserunt ducimus totam saepe, esse tempora voluptates debitis sequi quaerat labore optio, maxime quam libero. Doloribus, eius, dolorum!</p>' +
+					'</div>'],
+			];
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="resources/js/google-map.js"></script>
+		<script src="resources/js/google-map-properties.js"></script>
 	</body>
 </html>
