@@ -37,12 +37,43 @@
 									<li>24 hour visibility</li>
 								</ol>
 
-								<h3>Lorem ipsum dolor</h3>
+								<h3 class="landlord-services-content-undertitle">Lorem ipsum dolor</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sed asperiores nulla veniam impedit. Magnam, praesentium, rem! Cupiditate illo, nulla iste numquam odio, laudantium ipsam dignissimos consequatur accusantium, quasi nostrum!</p>
+								<p>&nbsp;</p>
+
+								<div class="team team-transparent">
+									<div class="row">
+										<div class="col-sm-4 col-md-3 team-profile-image">
+											<img src="resources/images/team/patkai.jpg" alt="">
+										</div>
+										<div class="col-sm-8 col-md-9 team-profile-data">
+											<h3 class="team-profile-data-title">Lorem IPSUM, <small>Customer Support Lead</small></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis scelerisque tortor. Phasellus ut ante sodales, tempus erat nec, consequat sem.</p>
+										</div>
+									</div>
+									<hr class="dark">
+									<div class="row">
+										<div class="col-sm-4 col-md-3 team-profile-image">
+											<img src="resources/images/team/patkai.jpg" alt="">
+										</div>
+										<div class="col-sm-8 col-md-9 team-profile-data">
+											<h3 class="team-profile-data-title">Lorem IPSUM, <small>Customer Support Lead</small></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis scelerisque tortor. Phasellus ut ante sodales, tempus erat nec, consequat sem.</p>
+										</div>
+									</div>
+									<hr class="dark">
+									<div class="row">
+										<div class="col-sm-4 col-md-3 team-profile-image">
+											<img src="resources/images/team/patkai.jpg" alt="">
+										</div>
+										<div class="col-sm-8 col-md-9 team-profile-data">
+											<h3 class="team-profile-data-title">Lorem IPSUM, <small>Customer Support Lead</small></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis scelerisque tortor. Phasellus ut ante sodales, tempus erat nec, consequat sem.</p>
+										</div>
+									</div>
+								</div>
 
 							</article>
-
-							<p>&nbsp;</p>
 
 						</div>
 
@@ -53,46 +84,6 @@
 
 				</div>
 			</main>
-
-			<section class="team block">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6 team-profile">
-							<div class="row">
-								<div class="col-sm-4 team-profile-image">
-									<img src="resources/images/team/patkai.jpg" alt="">
-								</div>
-								<div class="col-sm-8 team-profile-data">
-									<h3 class="team-profile-data-title">Lorem IPSUM, <small>Customer Support Lead</small></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis scelerisque tortor. Phasellus ut ante sodales, tempus erat nec, consequat sem.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 team-profile">
-							<div class="row">
-								<div class="col-sm-4 team-profile-image">
-									<img src="resources/images/team/patkai.jpg" alt="">
-								</div>
-								<div class="col-sm-8 team-profile-data">
-									<h3 class="team-profile-data-title">Lorem IPSUM, <small>Customer Support</small></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis scelerisque tortor. Phasellus ut ante sodales, tempus erat nec, consequat sem.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 team-profile">
-							<div class="row">
-								<div class="col-sm-4 team-profile-image">
-									<img src="resources/images/team/patkai.jpg" alt="">
-								</div>
-								<div class="col-sm-8 team-profile-data">
-									<h3 class="team-profile-data-title">Lorem IPSUM, <small>Customer Support</small></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis scelerisque tortor. Phasellus ut ante sodales, tempus erat nec, consequat sem.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			<?php include('includes/client-testimonial.php'); ?>
 
