@@ -4,7 +4,7 @@
 
 			<?php include("includes/header.php"); ?>
 
-			<section class="rental-map">
+			<section id="animated-map" class="rental-map">
 				<div id="map-canvas" class="map">map</div>
 			</section>
 
@@ -36,6 +36,16 @@
 				</div>
 			</section>
 
+			<section class="property-paginate-counter">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="kill-margin">1-11 pages per 423 properties</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<main id="property-mosaic-view" class="property-list">
 				<div class="container">
 					<div class="row">
@@ -56,7 +66,19 @@
 				</div>
 			</section>
 
-			<?php include('includes/pagination.php') ?>
+			<section class="property-paginate-counter">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="kill-margin">1-11 pages per 423 properties</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="property-paginate">
+				<?php include('includes/pagination.php') ?>
+			</section>
 
 			<?php include('includes/property-caution.php'); ?>
 

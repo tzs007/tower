@@ -6,13 +6,13 @@
 					<form action="" id="realEstateSearchForm">
 						<div class="form-group">
 							<label for="min_price" class="sr-only">Property search</label>
-							<input type="text" id="min_price" name="min_price" class="form-control" value="" placeholder="Search by minimum price">
+							<input type="text" id="min_price" name="min_price" class="form-control" value="" placeholder="Enter keyword">
 							<button class="btn btn-sm btn-success btn-find">Search</button>
 						</div>
 					</form>
 				</div>
 				<div class="col-sm-3 col-md-2">
-					<a href="javascript:void(0);" class="advanced-search btn btn-block" data-toggle="modal" data-target="#search-modal">Entire search</a>
+					<a href="javascript:void(0);" class="advanced-search btn btn-block" data-toggle="modal" data-target="#search-modal">Detailed search</a>
 				</div>
 				<div class=" col-sm-5 col-md-6 col-lg-5 col-lg-offset-1 property-search-sort clearfix">
 					<div class="property-search-tab property-search-sort-links pull-left">

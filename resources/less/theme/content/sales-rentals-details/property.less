@@ -117,7 +117,7 @@
 
 				&-transparent{
 
-					.lh-opacity(.7);
+					.lh-opacity(.8);
 				}
 
 				&-hotspot{
@@ -208,6 +208,14 @@
 	&-paginate{
 		margin-bottom: @grid-gutter-width * 2;
 
+		&-top{
+			margin-bottom: @grid-gutter-width;
+		}
+
+		&-counter{
+			margin-bottom: @grid-gutter-width;
+		}
+
 		.btn-paginate{
 			&-control{
 				.text-uppercase;
@@ -275,6 +283,7 @@
 				.advanced-search{
 					.button-variant(@brand-danger; #fff; @brand-danger);
 					height: 33px;
+					font-size: @font-size-base - 1;
 					margin: 1px 0 0 -20px;
 				}
 			}

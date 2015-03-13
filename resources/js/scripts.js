@@ -62,12 +62,12 @@ var App = {
 
 	/* property page animations */
 
-	showMapAndForm: function(){
+	showMapAndForm: function(map){
 		$('#btn-contact').on('click', function(e){
 			e.preventDefault();
 			$(this).css('outline','none');
 
-			$('.sales-map').animate({
+			$('#animated-map').animate({
 				marginTop: "0"
 			}, {
 				duration: 500,

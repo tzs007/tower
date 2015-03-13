@@ -49,7 +49,7 @@
 							</div>
 							<div class="row btn-gallery-container">
 								<div class="col-sm-12 text-center">
-									<button class="btn btn-default btn-lg" id="btn-gallery">SEE THE FULL GALLERY</button>
+									<button class="btn btn-default btn-lg" id="btn-gallery">ALL PICTURES</button>
 								</div>
 							</div>
 							<div class="row" id="full-gallery">

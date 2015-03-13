@@ -7,7 +7,6 @@
 			<li><a href="#">About Us</a></li>
 			<li><a href="#">Apartment Budapest</a></li>
 			<li><a href="#">Accounting &amp; Tax Returns</a></li>
-			<li><a href="#">Property Florida</a></li>
 		</ul>
 	</div>
 </div>
