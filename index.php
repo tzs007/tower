@@ -5,7 +5,7 @@
 		<?php include("includes/header.php"); ?>
 
 			<main class="hero">
-				<div class="owl-carousel">
+				<div id="owl-hero" class="owl-carousel">
 					<div class="owl-carousel-item" style="background-image:url(resources/images/hero1.jpg)">
 						<div class="container">
 							<div class="row">

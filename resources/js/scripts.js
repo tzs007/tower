@@ -16,21 +16,63 @@ var App = {
 
 	/* owl carousel */
 
+	vars: {
+		/*owl vars*/
+		time: 7, // time in seconds
+		progressBar: $("<div>", { id: "progressBar" }),
+		bar:  $("<div>", { id: "bar" }),
+		elem: '#owl-hero',
+		isPause: false,
+		tick: 0,
+		percentTime: 0
+		/* eof owl vars */
+	},
+
 	owl: function(){
 		$(".owl-carousel").owlCarousel({
-			loop:false,
-			margin:0,
-			nav:true,
+			loop: true,
+			margin: 0,
+			nav: true,
 			navText: [
 				'<div class="icon-container"><i class="icon icon-arrow-left"></i></div>',
 				'<div class="icon-container"><i class="icon icon-arrow-right"></i></div>'
 			],
 			responsive:{
-				0:{
-					items:1
+				0: {
+					items: 1
 				}
-			}
+			},
+			afterInit: this.progressBar,
+			afterMove: this.moved,
+			startDragging: this.pauseOnDragging,
+			slideSpeed: 500,
+			paginationSpeed: 500,
 		});
+	},
+
+	progressBar: function(){
+		this.vars.progressBar.append( this.vars.bar ).prependTo( this.vars.elem );
+		this.vars.tick = setInterval(this.interval, 10);
+	},
+
+	interval: function(){
+		if(this.vars.isPause === false){
+			this.vars.percentTime += 1 / this.vars.time;
+			this.vars.bar.css({ width: this.vars.percentTime + "%" });
+			//if percentTime is equal or greater than 100
+			if(this.vars.percentTime >= 100){
+				//slide to next item
+				this.vars.elem.trigger('owl.next');
+			}
+		}
+	},
+
+	pauseOnDragging: function(){
+		this.vars.isPause = true;
+	},
+
+	moved: function(){
+		clearTimeout(this.vars.tick);
 	},
 
 	/* index contact form */
