@@ -1,3 +1,7 @@
+function logged(){
+	console.log('afterInit');
+}
+
 var App = {
 
 	/* jump to property details */
@@ -5,30 +9,25 @@ var App = {
 	propertyLauncher: function(){
 		$('.property-list-item').hover(
 			function(){
-				$(this).find('[class^="item-"]').addClass('item-transparent');
+				$(App).find('[class^="item-"]').addClass('item-transparent');
 			},
 			function(){
-				$(this).find('[class^="item-"]').removeClass('item-transparent');
+				$(App).find('[class^="item-"]').removeClass('item-transparent');
 			}).on('click', function(){
-				window.location.href = $(this).data('href');
+				window.location.href = $(App).data('href');
 			});
 	},
 
 	/* owl carousel */
-
 	vars: {
-		/*owl vars*/
-		time: 7, // time in seconds
-		progressBar: $("<div>", { id: "progressBar" }),
-		bar:  $("<div>", { id: "bar" }),
-		elem: '#owl-hero',
-		isPause: false,
+		time: 5,
 		tick: 0,
-		percentTime: 0
-		/* eof owl vars */
+		percentTime: 0,
+		isPause: false
 	},
 
 	owl: function(){
+
 		$(".owl-carousel").owlCarousel({
 			loop: true,
 			margin: 0,
@@ -42,48 +41,58 @@ var App = {
 					items: 1
 				}
 			},
-			afterInit: this.progressBar,
-			afterMove: this.moved,
-			startDragging: this.pauseOnDragging,
-			slideSpeed: 500,
-			paginationSpeed: 500,
+			onInitialized: App.progressBar,
+			onTranslated: App.moved,
+			onDragged: App.pauseOnDragging,
 		});
 	},
 
+	start: function(){
+		App.vars.tick = setInterval(App.interval, 10);
+	},
+
 	progressBar: function(){
-		this.vars.progressBar.append( this.vars.bar ).prependTo( this.vars.elem );
-		this.vars.tick = setInterval(this.interval, 10);
+		var $progressBar = $("<div>", { id: 'progressBar' }),
+			$bar = $("<div>", { id: 'bar' }),
+			$elem = $('#owl-hero');
+
+		$progressBar.append( $bar ).prependTo( $elem );
+		App.start();
 	},
 
 	interval: function(){
-		if(this.vars.isPause === false){
-			this.vars.percentTime += 1 / this.vars.time;
-			this.vars.bar.css({ width: this.vars.percentTime + "%" });
+		if(App.vars.isPause === false){
+			App.vars.percentTime += 1 / App.vars.time;
+			$('#bar').css({ width: App.vars.percentTime + "%" });
+
 			//if percentTime is equal or greater than 100
-			if(this.vars.percentTime >= 100){
+			if(App.vars.percentTime >= 100){
 				//slide to next item
-				this.vars.elem.trigger('owl.next');
+				var owl = $('.owl-carousel');
+				owl.owlCarousel();
+				owl.trigger('next.owl.carousel'); // ????? ménem indulsz köcsög????
 			}
 		}
 	},
 
 	pauseOnDragging: function(){
-		this.vars.isPause = true;
+		App.vars.isPause = true;
 	},
 
 	moved: function(){
-		clearTimeout(this.vars.tick);
+		clearTimeout(App.vars.tick);
+		App.start();
 	},
 
 	/* index contact form */
 
 	formLabelColorizer: function(){
 		$('.form-control').on('focus', function(){
-			$(this).parents('.form-group').find('.control-label').addClass('selected');
+			$(App).parents('.form-group').find('.control-label').addClass('selected');
 		});
 
 		$('.form-control').on('blur', function(){
-			$(this).parents('.form-group').find('.control-label').removeClass('selected');
+			$(App).parents('.form-group').find('.control-label').removeClass('selected');
 		});
 	},
 
@@ -92,7 +101,7 @@ var App = {
 	roll: function(){
 		$('.roller').click(function(e) {
 			e.preventDefault();
-			var t = $(this.hash);
+			var t = $(App.hash);
 			if(t){
 				var n = t.offset().top - 130;
 				$('html, body').animate({
@@ -107,7 +116,7 @@ var App = {
 	showMapAndForm: function(map){
 		$('#btn-contact').on('click', function(e){
 			e.preventDefault();
-			$(this).css('outline','none');
+			$(App).css('outline','none');
 
 			$('#animated-map').animate({
 				marginTop: "0"
@@ -155,7 +164,7 @@ var App = {
 
 			e.preventDefault();
 
-			$(this).addClass('active');
+			$(App).addClass('active');
 			$('#property-list-view-switch').removeClass('active');
 
 			if(view != "mosaic"){
@@ -170,7 +179,7 @@ var App = {
 
 			e.preventDefault();
 
-			$(this).addClass('active');
+			$(App).addClass('active');
 			$('#property-mosaic-view-switch').removeClass('active');
 
 			if(view != "list"){
